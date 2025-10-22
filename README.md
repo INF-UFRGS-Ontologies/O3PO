@@ -4,7 +4,6 @@
 
 Description: A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies.
 
-More information can be found at http://obofoundry.org/ontology/o3po
 
 ## Versions
 
@@ -14,7 +13,6 @@ The latest version of the ontology can always be found at:
 
 https://www.inf.ufrgs.br/ontologies/o3po.owl
 
-(note this will not show up until the request has been approved by obofoundry.org)
 
 ### Editors' version
 
