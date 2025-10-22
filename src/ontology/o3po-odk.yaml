@@ -1,0 +1,41 @@
+## General Settings ##
+uribase: https://www.inf.ufrgs.br/ontologies
+license: https://opensource.org/license/mit
+github_org: INF-UFRGS-Ontologies
+ci:
+ - github_actions
+export_formats:
+ - owl
+ - ttl
+release_artefacts:
+ - base
+ - full
+ - simple
+
+## Ontology Metadata ##
+id: o3po
+title: Offshore Petroleum Production Plant Ontology (O3PO)
+description: "A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies."
+creators:
+ - Nicolau Santos
+contributors:
+ - Fabrício H. Rodrigues
+ - Haroldo Rojas
+ - Mara Abel
+
+## Github Settings ##
+repo: O3PO
+git_main_branch: master
+
+## O3PO Specific Settings ##
+import_group:
+  products:
+    - id: bfo
+      mirror_from: http://purl.obolibrary.org/obo/bfo/2020/bfo.owl
+    - id: iao
+      mirror_from: http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl
+    - id: iof-core
+      mirror_from: https://spec.industrialontologies.org/ontology/202401/core/Core/
+    - id: geocore
+      mirror_from: https://www.inf.ufrgs.br/bdi/ontologies/geocore/releases/2024-04-06/geocore.owl
+

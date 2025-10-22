@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/o3po
+
+idspace: O3PO
+base_url: /obo/o3po
+
+products:
+- o3po.owl: https://raw.githubusercontent.com/INF-UFRGS-Ontologies/O3PO/master/o3po.owl
+- o3po.obo: https://raw.githubusercontent.com/INF-UFRGS-Ontologies/O3PO/master/o3po.obo
+
+term_browser: ontobee
+example_terms:
+- O3PO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/INF-UFRGS-Ontologies/O3PO/v
+
+- prefix: /tracker/
+  replacement: https://github.com/INF-UFRGS-Ontologies/O3PO/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/O3PO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/INF-UFRGS-Ontologies/O3PO/master/
+
