@@ -1,4 +1,4 @@
-Prefix(:=<https://www.inf.ufrgs.br/ontologies/o3po.owl#>)
+Prefix(o3po:=<https://www.inf.ufrgs.br/ontologies/o3po.owl#>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -7,31 +7,1220 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
+Prefix(geocore:=<https://www.inf.ufrgs.br/bdi/ontologies/geocore>)
+Prefix(iof-core:=<https://spec.industrialontologies.org/ontology/core/Core/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
+Prefix(AnnotationVocabulary:=<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/>)
+Prefix(CommonCoreOntologies:=<http://www.ontologyrepository.com/CommonCoreOntologies/>)
+
 
 Ontology(<https://www.inf.ufrgs.br/ontologies/o3po.owl>
-
 Import(<https://www.inf.ufrgs.br/ontologies/o3po/imports/bfo_import.owl>)
+Import(<https://www.inf.ufrgs.br/ontologies/o3po/imports/geocore_import.owl>)
 Import(<https://www.inf.ufrgs.br/ontologies/o3po/imports/iao_import.owl>)
 Import(<https://www.inf.ufrgs.br/ontologies/o3po/imports/iof-core_import.owl>)
-Import(<https://www.inf.ufrgs.br/ontologies/o3po/imports/geocore_import.owl>)
-
-
+Import(<https://www.inf.ufrgs.br/ontologies/o3po/imports/ro_import.owl>)
 Annotation(dcterms:description "A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies.")
 Annotation(dcterms:license <https://opensource.org/license/mit>)
 Annotation(dcterms:title "Offshore Petroleum Production Plant Ontology (O3PO)")
 
 
-Declaration(Class(<https://www.inf.ufrgs.br/ontologies/O3PO_0000000>))
+Annotation(dce:contributor "Fabrício H. Rodrigues"@en)
+Annotation(dce:contributor "Haroldo Rojas"@en)
+Annotation(dce:contributor "Mara Abel"@en)
+Annotation(dce:creator "Nicolau Santos"@en)
+Annotation(dce:description "A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies."@en)
+Annotation(dce:description "Uma ontologia de domínio para plantas de produção de petróleo offshore foi estabelecida utilizando BFO como a ontologia de topo e incorporando IOF-Core e GeoCore como ontologias de nível intermediário."@pt-br)
+Annotation(dce:license "MIT License
+
+Copyright (c) 2025 Nicolau Oyhenard dos Santos
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."@en)
+Annotation(dce:title "Offshore Petroleum Production Plant Ontology (O3PO)"@en)
+Annotation(dce:title "Ontologia de Planta de Produção de Petróleo Offshore (O3PO)"@pt-br)
+Annotation(dcterms:abstract "A comprehensive domain ontology for modeling offshore petroleum production plants, their components, processes, and operational relationships."@en)
+Annotation(dcterms:created "2023-01-15"^^xsd:date)
+Annotation(dcterms:modified "2025-01-15"^^xsd:date)
+Annotation(dcterms:publisher "Federal University of Rio Grande do Sul (UFRGS) - Institute of Informatics"@en)
+Annotation(rdfs:comment "O3PO provides a comprehensive formal representation of offshore petroleum production systems based on BFO. The ontology follows aristotelian definition patterns as recommended in Barry Smith's 'Building Ontologies with Basic Formal Ontology'."@en)
+Annotation(owl:backwardCompatibleWith <https://www.petwin.org/O3PO/o3po/>)
+
+# Declaration(Class(<https://www.inf.ufrgs.br/ontologies/O3PO_0000000>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
 
 ############################
+#   Classes
+############################
+Declaration(Class(o3po:Annulus))
+Declaration(Class(o3po:Basin))
+Declaration(Class(o3po:BeingOperatedCapability))
+Declaration(Class(o3po:Borehole))
+Declaration(Class(o3po:BottomholePressure))
+Declaration(Class(o3po:Casing))
+Declaration(Class(o3po:CentrifugalPump))
+Declaration(Class(o3po:Choke))
+Declaration(Class(o3po:ChokePosition))
+Declaration(Class(o3po:ChokeSize))
+Declaration(Class(o3po:ChristmasTree))
+Declaration(Class(o3po:CommonCloseControlLinePressure))
+Declaration(Class(o3po:Condensate))
+Declaration(Class(o3po:ControlLine))
+Declaration(Class(o3po:CrudeOil))
+Declaration(Class(o3po:DeltaPressure))
+Declaration(Class(o3po:FPSO))
+Declaration(Class(o3po:Field))
+Declaration(Class(o3po:FieldName))
+Declaration(Class(o3po:Flow))
+Declaration(Class(o3po:FlowRate))
+Declaration(Class(o3po:FlowRateMeasurementDatum))
+Declaration(Class(o3po:Flowline))
+Declaration(Class(o3po:Flowmeter))
+Declaration(Class(o3po:Fluid))
+Declaration(Class(o3po:GasLiftValve))
+Declaration(Class(o3po:ICV))
+Declaration(Class(o3po:ICVAnnularPressure))
+Declaration(Class(o3po:ICVAnnularTemperature))
+Declaration(Class(o3po:ICVDeltaPressure))
+Declaration(Class(o3po:ICVFlowRate))
+Declaration(Class(o3po:ICVFlowRateICVMethod))
+Declaration(Class(o3po:ICVFlowRateIPRMethod))
+Declaration(Class(o3po:ICVFlowRateReconciledMethod))
+Declaration(Class(o3po:ICVOpenControlLinePressure))
+Declaration(Class(o3po:InjectionFluid))
+Declaration(Class(o3po:InjectionProcess))
+Declaration(Class(o3po:InjectionRole))
+Declaration(Class(o3po:InjectionWell))
+Declaration(Class(o3po:InjectorRole))
+Declaration(Class(o3po:Manifold))
+Declaration(Class(o3po:Name))
+Declaration(Class(o3po:NaturalGas))
+Declaration(Class(o3po:Nozzle))
+Declaration(Class(o3po:ObservationRole))
+Declaration(Class(o3po:ObservationWell))
+Declaration(Class(o3po:PLEM))
+Declaration(Class(o3po:Permeability))
+Declaration(Class(o3po:Petroleum))
+Declaration(Class(o3po:Pipeline))
+Declaration(Class(o3po:Plant))
+Declaration(Class(o3po:Platform))
+Declaration(Class(o3po:PositiveDisplacementPump))
+Declaration(Class(o3po:Pressure))
+Declaration(Class(o3po:PressureDownstreamOfChoke))
+Declaration(Class(o3po:PressureSensor))
+Declaration(Class(o3po:PressureUpstreamOfChoke))
+Declaration(Class(o3po:ProducerRole))
+Declaration(Class(o3po:ProductionFluid))
+Declaration(Class(o3po:ProductionProcess))
+Declaration(Class(o3po:ProductionRole))
+Declaration(Class(o3po:ProductionSeparator))
+Declaration(Class(o3po:ProductionWell))
+Declaration(Class(o3po:ProductionZone))
+Declaration(Class(o3po:Pump))
+Declaration(Class(o3po:Reservoir))
+Declaration(Class(o3po:ReservoirRole))
+Declaration(Class(o3po:Riser))
+Declaration(Class(o3po:Semisubmersible))
+Declaration(Class(o3po:Sensor))
+Declaration(Class(o3po:Separator))
+Declaration(Class(o3po:SubseaTree))
+Declaration(Class(o3po:Tag))
+Declaration(Class(o3po:Temperature))
+Declaration(Class(o3po:TemperatureDownstreamOfChoke))
+Declaration(Class(o3po:TemperatureSensor))
+Declaration(Class(o3po:TemperatureUpstreamOfChoke))
+Declaration(Class(o3po:TestSeparator))
+Declaration(Class(o3po:Tube))
+Declaration(Class(o3po:Tubing))
+Declaration(Class(o3po:TubingDownholePressure))
+Declaration(Class(o3po:TubingDownholeTemperature))
+Declaration(Class(o3po:TubingRole))
+Declaration(Class(o3po:Valve))
+Declaration(Class(o3po:Variable))
+Declaration(Class(o3po:Volume))
+Declaration(Class(o3po:Water))
+Declaration(Class(o3po:Well))
+Declaration(Class(o3po:WellFlowRate))
+Declaration(Class(o3po:WellLiquidRateInSituConditions))
+Declaration(Class(o3po:WellLiquidRateStandardConditions))
+Declaration(Class(o3po:WellName))
+Declaration(Class(o3po:WellStatusFlag))
+Declaration(Class(o3po:Wellhead))
+Declaration(Class(o3po:WellheadPressure))
+Declaration(Class(o3po:WellheadTemperature))
+Declaration(ObjectProperty(o3po:componentOf))
+Declaration(ObjectProperty(o3po:connectedTo))
+Declaration(ObjectProperty(o3po:exchangesFluidWith))
+Declaration(ObjectProperty(o3po:feedsFluidTo))
+Declaration(ObjectProperty(o3po:hasComponent))
+Declaration(ObjectProperty(o3po:hasFluidFedBy))
+Declaration(ObjectProperty(o3po:hasFluidReturnedBy))
+Declaration(ObjectProperty(o3po:hasFluidSuppliedBy))
+Declaration(ObjectProperty(o3po:injects))
+Declaration(ObjectProperty(o3po:isInjectedBy))
+Declaration(ObjectProperty(o3po:isProducedBy))
+Declaration(ObjectProperty(o3po:isSeparatedBy))
+Declaration(ObjectProperty(o3po:isTreatedBy))
+Declaration(ObjectProperty(o3po:measures))
+Declaration(ObjectProperty(o3po:returnsFluidTo))
+Declaration(ObjectProperty(o3po:suppliesFluidTo))
+Declaration(ObjectProperty(o3po:transports))
+Declaration(ObjectProperty(o3po:treats))
+Declaration(DataProperty(o3po:hasFlowRateValue))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: o3po:componentOf (component of)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:componentOf "def. a part of relation that holds between two material entities"@en)
+AnnotationAssertion(rdfs:label o3po:componentOf "component of"@en)
+AnnotationAssertion(rdfs:label o3po:componentOf "componente de"@pt-br)
+SubObjectPropertyOf(o3po:componentOf obo:BFO_0000050)
+InverseObjectProperties(o3po:componentOf o3po:hasComponent)
+TransitiveObjectProperty(o3po:componentOf)
+ObjectPropertyDomain(o3po:componentOf obo:BFO_0000040)
+ObjectPropertyRange(o3po:componentOf obo:BFO_0000040)
+
+# Object Property: o3po:connectedTo (connected to)
+
+AnnotationAssertion(rdfs:label o3po:connectedTo "conectado a"@pt-br)
+AnnotationAssertion(rdfs:label o3po:connectedTo "connected to"@en)
+SymmetricObjectProperty(o3po:connectedTo)
+ObjectPropertyDomain(o3po:connectedTo obo:BFO_0000040)
+ObjectPropertyRange(o3po:connectedTo obo:BFO_0000040)
+
+# Object Property: o3po:exchangesFluidWith (exchanges fluid with)
+
+AnnotationAssertion(rdfs:comment o3po:exchangesFluidWith "Relation between two things which have a fluid exchange connection"@en)
+AnnotationAssertion(rdfs:label o3po:exchangesFluidWith "exchanges fluid with"@en)
+AnnotationAssertion(rdfs:label o3po:exchangesFluidWith "troca fluido com"@pt-br)
+AnnotationAssertion(AnnotationVocabulary:adaptedFrom o3po:exchangesFluidWith "http://www.w3id.org/fso"@en)
+SubObjectPropertyOf(o3po:exchangesFluidWith o3po:connectedTo)
+SymmetricObjectProperty(o3po:exchangesFluidWith)
+ObjectPropertyDomain(o3po:exchangesFluidWith obo:BFO_0000040)
+ObjectPropertyRange(o3po:exchangesFluidWith obo:BFO_0000040)
+
+# Object Property: o3po:feedsFluidTo (feeds fluid to)
+
+AnnotationAssertion(rdfs:comment o3po:feedsFluidTo "Relation from a thing feeding fluid to the thing it is feeding fluid to."@en)
+AnnotationAssertion(rdfs:label o3po:feedsFluidTo "alimenta fluido para"@pt-br)
+AnnotationAssertion(rdfs:label o3po:feedsFluidTo "feeds fluid to"@en)
+AnnotationAssertion(AnnotationVocabulary:adaptedFrom o3po:feedsFluidTo "http://www.w3id.org/fso"@en)
+SubObjectPropertyOf(o3po:feedsFluidTo o3po:exchangesFluidWith)
+InverseObjectProperties(o3po:feedsFluidTo o3po:hasFluidFedBy)
+
+# Object Property: o3po:hasComponent (tem componente)
+
+AnnotationAssertion(rdfs:label o3po:hasComponent "has component"@en)
+AnnotationAssertion(rdfs:label o3po:hasComponent "tem componente"@pt-br)
+SubObjectPropertyOf(o3po:hasComponent obo:BFO_0000051)
+TransitiveObjectProperty(o3po:hasComponent)
+
+# Object Property: o3po:hasFluidFedBy (has fluid fed by)
+
+AnnotationAssertion(rdfs:comment o3po:hasFluidFedBy "Relation from a thing that is fed fluid to the thing feeding the fluid."@en)
+AnnotationAssertion(rdfs:label o3po:hasFluidFedBy "has fluid fed by"@en)
+AnnotationAssertion(rdfs:label o3po:hasFluidFedBy "tem fluido alimentado por"@pt-br)
+AnnotationAssertion(AnnotationVocabulary:adaptedFrom o3po:hasFluidFedBy "http://www.w3id.org/fso"@en)
+SubObjectPropertyOf(o3po:hasFluidFedBy o3po:exchangesFluidWith)
+
+# Object Property: o3po:hasFluidReturnedBy (has fluid returned by)
+
+AnnotationAssertion(rdfs:comment o3po:hasFluidReturnedBy "Relation between a thing that has fluid returned to it and the thing returning the fluid."@en)
+AnnotationAssertion(rdfs:label o3po:hasFluidReturnedBy "has fluid returned by"@en)
+AnnotationAssertion(rdfs:label o3po:hasFluidReturnedBy "tem fluido retornado por"@pt-br)
+AnnotationAssertion(AnnotationVocabulary:adaptedFrom o3po:hasFluidReturnedBy "http://www.w3id.org/fso"@en)
+SubObjectPropertyOf(o3po:hasFluidReturnedBy o3po:feedsFluidTo)
+InverseObjectProperties(o3po:hasFluidReturnedBy o3po:returnsFluidTo)
+
+# Object Property: o3po:hasFluidSuppliedBy (tem fluido fornecido por)
+
+AnnotationAssertion(rdfs:comment o3po:hasFluidSuppliedBy "Relation between a thing that has fluid supplied to it and the thing supplying the fluid."@en)
+AnnotationAssertion(rdfs:label o3po:hasFluidSuppliedBy "has fluid supplied by"@en)
+AnnotationAssertion(rdfs:label o3po:hasFluidSuppliedBy "tem fluido fornecido por"@pt-br)
+AnnotationAssertion(AnnotationVocabulary:adaptedFrom o3po:hasFluidSuppliedBy "http://www.w3id.org/fso"@en)
+SubObjectPropertyOf(o3po:hasFluidSuppliedBy o3po:feedsFluidTo)
+InverseObjectProperties(o3po:hasFluidSuppliedBy o3po:suppliesFluidTo)
+
+# Object Property: o3po:injects (injeta)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:injects "def. to introduce (something) into a passage, cavity, or solid material under pressure"@en)
+AnnotationAssertion(rdfs:label o3po:injects "injects"@en)
+AnnotationAssertion(rdfs:label o3po:injects "injeta"@pt-br)
+AnnotationAssertion(rdfs:seeAlso o3po:injects "https://www.lexico.com/en/definition/inject"@en)
+InverseObjectProperties(o3po:injects o3po:isInjectedBy)
+
+# Object Property: o3po:isInjectedBy (is injected by)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:isInjectedBy "def. inverse of injects"@en)
+AnnotationAssertion(rdfs:label o3po:isInjectedBy "is injected by"@en)
+AnnotationAssertion(rdfs:label o3po:isInjectedBy "é injetado por"@pt-br)
+
+# Object Property: o3po:isProducedBy (é produzido por)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:isProducedBy "def. inverse of produces"@en)
+AnnotationAssertion(rdfs:label o3po:isProducedBy "is produced by"@en)
+AnnotationAssertion(rdfs:label o3po:isProducedBy "é produzido por"@pt-br)
+
+# Object Property: o3po:isSeparatedBy (is separated by)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:isSeparatedBy "def. inverse of separates"@en)
+AnnotationAssertion(rdfs:label o3po:isSeparatedBy "is separated by"@en)
+AnnotationAssertion(rdfs:label o3po:isSeparatedBy "é separado por"@pt-br)
+
+# Object Property: o3po:isTreatedBy (is treated by)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:isTreatedBy "def. inverse of treats"@en)
+AnnotationAssertion(rdfs:label o3po:isTreatedBy "is treated by"@en)
+AnnotationAssertion(rdfs:label o3po:isTreatedBy "é tratado por"@pt-br)
+InverseObjectProperties(o3po:isTreatedBy o3po:treats)
+
+# Object Property: o3po:measures (measures)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:measures "def. a relation between a sensor and a quality that the sensor is designed to measure"@en)
+AnnotationAssertion(rdfs:label o3po:measures "measures"@en)
+AnnotationAssertion(rdfs:label o3po:measures "mede"@pt-br)
+ObjectPropertyDomain(o3po:measures o3po:Sensor)
+ObjectPropertyRange(o3po:measures ObjectUnionOf(obo:BFO_0000019 iof-core:ProcessCharacteristic))
+
+# Object Property: o3po:returnsFluidTo (returns fluid to)
+
+AnnotationAssertion(rdfs:comment o3po:returnsFluidTo "Relation implying logical return flow from a thing to another."@en)
+AnnotationAssertion(rdfs:label o3po:returnsFluidTo "retorna fluido para"@pt-br)
+AnnotationAssertion(rdfs:label o3po:returnsFluidTo "returns fluid to"@en)
+AnnotationAssertion(AnnotationVocabulary:adaptedFrom o3po:returnsFluidTo "http://www.w3id.org/fso"@en)
+SubObjectPropertyOf(o3po:returnsFluidTo o3po:hasFluidFedBy)
+
+# Object Property: o3po:suppliesFluidTo (fornece fluido para)
+
+AnnotationAssertion(rdfs:comment o3po:suppliesFluidTo "Relation implying logical supply flow from a thing to another."@en)
+AnnotationAssertion(rdfs:label o3po:suppliesFluidTo "fornece fluido para"@pt-br)
+AnnotationAssertion(rdfs:label o3po:suppliesFluidTo "supplies fluid to"@en)
+AnnotationAssertion(AnnotationVocabulary:adaptedFrom o3po:suppliesFluidTo "http://www.w3id.org/fso"@en)
+SubObjectPropertyOf(o3po:suppliesFluidTo o3po:hasFluidFedBy)
+
+# Object Property: o3po:transports (transporta)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:transports "def. the action of transporting something or the state of being transported"@en)
+AnnotationAssertion(rdfs:label o3po:transports "transporta"@pt-br)
+AnnotationAssertion(rdfs:label o3po:transports "transports"@en)
+AnnotationAssertion(rdfs:seeAlso o3po:transports "https://www.lexico.com/en/definition/transport"@en)
+
+# Object Property: o3po:treats (treats)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:treats "def. to apply a process or a substance to (something) to protect or preserve it or to give it particular properties"@en)
+AnnotationAssertion(rdfs:label o3po:treats "trata"@pt-br)
+AnnotationAssertion(rdfs:label o3po:treats "treats"@en)
+AnnotationAssertion(rdfs:seeAlso o3po:treats "https://www.lexico.com/en/definition/treat"@en)
+FunctionalObjectProperty(o3po:treats)
+AsymmetricObjectProperty(o3po:treats)
+IrreflexiveObjectProperty(o3po:treats)
+
+############################
+#   Data Properties
+############################
+
+# Data Property: o3po:hasFlowRateValue (has flow rate value)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:hasFlowRateValue "def. a relation between a flow rate and a float value representing the volumetric flow magnitude"@en)
+AnnotationAssertion(rdfs:comment o3po:hasFlowRateValue "Flow rate typically expressed in cubic meters per day (m³/d) or barrels per day (bbl/d)."@en)
+AnnotationAssertion(rdfs:label o3po:hasFlowRateValue "has flow rate value"@en)
+AnnotationAssertion(rdfs:label o3po:hasFlowRateValue "tem valor de vazão"@pt-br)
+DataPropertyDomain(o3po:hasFlowRateValue o3po:FlowRate)
+DataPropertyRange(o3po:hasFlowRateValue xsd:float)
+
+############################
+#   Classes
+############################
+
+# Class: o3po:Annulus (annulus)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Annulus "def. a obo:Site that occupies a well and is delimited by any void between any piping, tubing or casing and the piping, tubing, or casing immediately surrounding it"@en)
+AnnotationAssertion(rdfs:comment o3po:Annulus "The annulus of an oil well or water well is any void between any piping, tubing or casing and the piping, tubing, or casing immediately surrounding it."@en)
+AnnotationAssertion(rdfs:label o3po:Annulus "annulus"@en)
+AnnotationAssertion(rdfs:label o3po:Annulus "anular"@pt-br)
+SubClassOf(o3po:Annulus obo:BFO_0000029)
+SubClassOf(o3po:Annulus ObjectSomeValuesFrom(obo:BFO_0000050 o3po:Well))
+
+# Class: o3po:Basin (basin)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Basin "def. a two-dimensional continuant faunal boundary"@en)
+AnnotationAssertion(rdfs:label o3po:Basin "bacia"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Basin "basin"@en)
+SubClassOf(o3po:Basin obo:BFO_0000146)
+
+# Class: o3po:BeingOperatedCapability (being operated capability)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:BeingOperatedCapability "def. a capability to be operated"@en)
+AnnotationAssertion(rdfs:label o3po:BeingOperatedCapability "being operated capability"@en)
+AnnotationAssertion(rdfs:label o3po:BeingOperatedCapability "capacidade de ser operado"@pt-br)
+SubClassOf(o3po:BeingOperatedCapability iof-core:Capability)
+
+# Class: o3po:Borehole (furo do poço)
+
+AnnotationAssertion(oboInOwl:hasRelatedSynonym o3po:Borehole "borehole"@en)
+AnnotationAssertion(oboInOwl:source o3po:Borehole "https://www.lexico.com/en/definition/well"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Borehole "def. a obo:Site that is a boring in the Earth designed to bring oil, gas or water to the surface"@en)
+AnnotationAssertion(rdfs:comment o3po:Borehole "A shaft sunk into the ground to obtain water, oil, or gas."@en)
+AnnotationAssertion(rdfs:label o3po:Borehole "furo do poço"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Borehole "wellbore"@en)
+SubClassOf(o3po:Borehole obo:BFO_0000029)
+SubClassOf(o3po:Borehole ObjectSomeValuesFrom(obo:BFO_0000050 o3po:Well))
+
+# Class: o3po:BottomholePressure (pressão de fundo)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:BottomholePressure "def. pressure at the bottom of the well"@en)
+AnnotationAssertion(rdfs:label o3po:BottomholePressure "bottomhole pressure"@en)
+AnnotationAssertion(rdfs:label o3po:BottomholePressure "pressão de fundo"@pt-br)
+AnnotationAssertion(rdfs:seeAlso o3po:BottomholePressure "https://www.glossary.oilfield.slb.com/Terms/b/bottomhole_pressure.aspx"@en)
+SubClassOf(o3po:BottomholePressure o3po:Pressure)
+SubClassOf(o3po:BottomholePressure ObjectSomeValuesFrom(iof-core:qualityOf o3po:Well))
+
+# Class: o3po:Casing (revestimento)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Casing "def. a material artifact that is a component of a well and provides structural integrity to the wellbore"@en)
+AnnotationAssertion(rdfs:label o3po:Casing "casing"@en)
+AnnotationAssertion(rdfs:label o3po:Casing "revestimento"@pt-br)
+SubClassOf(o3po:Casing iof-core:MaterialArtifact)
+SubClassOf(o3po:Casing ObjectSomeValuesFrom(o3po:componentOf o3po:Well))
+
+# Class: o3po:CentrifugalPump (centrifugal pump)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:CentrifugalPump "def. a pump where the rotary motion applies centrifugal force to discharge fluids from the pump"@en)
+AnnotationAssertion(rdfs:label o3po:CentrifugalPump "bomba centrífuga"@pt-br)
+AnnotationAssertion(rdfs:label o3po:CentrifugalPump "centrifugal pump"@en)
+AnnotationAssertion(rdfs:seeAlso o3po:CentrifugalPump "https://www.glossary.oilfield.slb.com/Terms/c/centrifugal_pump.aspx")
+SubClassOf(o3po:CentrifugalPump o3po:Pump)
+DisjointClasses(o3po:CentrifugalPump o3po:PositiveDisplacementPump)
+
+# Class: o3po:Choke (válvula de choke)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Choke "def. a valve that restricts flow"@en)
+AnnotationAssertion(rdfs:label o3po:Choke "choke valve"@en)
+AnnotationAssertion(rdfs:label o3po:Choke "válvula de choke"@pt-br)
+SubClassOf(o3po:Choke o3po:Valve)
+DisjointClasses(o3po:Choke o3po:ICV)
+
+# Class: o3po:ChokePosition (choke position)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ChokePosition "def. a quality that represents the position of a choke"@en)
+AnnotationAssertion(rdfs:label o3po:ChokePosition "choke position"@en)
+AnnotationAssertion(rdfs:label o3po:ChokePosition "posição do choke"@pt-br)
+SubClassOf(o3po:ChokePosition obo:BFO_0000019)
+SubClassOf(o3po:ChokePosition ObjectSomeValuesFrom(obo:RO_0000080 o3po:Choke))
+SubClassOf(o3po:ChokePosition ObjectAllValuesFrom(iof-core:qualityOf o3po:Choke))
+
+# Class: o3po:ChokeSize (choke size)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ChokeSize "def. a quality that represents the size of a choke"@en)
+AnnotationAssertion(rdfs:label o3po:ChokeSize "choke size"@en)
+AnnotationAssertion(rdfs:label o3po:ChokeSize "tamanho do choke"@pt-br)
+SubClassOf(o3po:ChokeSize obo:BFO_0000019)
+SubClassOf(o3po:ChokeSize ObjectSomeValuesFrom(iof-core:qualityOf o3po:Choke))
+SubClassOf(o3po:ChokeSize ObjectAllValuesFrom(iof-core:qualityOf o3po:Choke))
+
+# Class: o3po:ChristmasTree (árvore de natal)
+
+AnnotationAssertion(oboInOwl:hasRelatedSynonym o3po:ChristmasTree "Tree"@en)
+AnnotationAssertion(oboInOwl:source o3po:ChristmasTree <https://en.wikipedia.org/wiki/Christmas_tree_(oil_well)>)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ChristmasTree "def. an assembly that is composed of valves and that is located above a well and that is directly or indirectly connected to the well to control the flow of fluids from/into the well"@en)
+AnnotationAssertion(rdfs:comment o3po:ChristmasTree "In petroleum and natural gas extraction, a Christmas tree, or 'tree', is an assembly of valves, spools, and fittings used to regulate the flow of pipes in an oil well, gas well, water injection well, water disposal well, gas injection well, condensate well and other types of wells."@en)
+AnnotationAssertion(rdfs:label o3po:ChristmasTree "christmas tree"@en)
+AnnotationAssertion(rdfs:label o3po:ChristmasTree "árvore de natal"@pt-br)
+SubClassOf(o3po:ChristmasTree iof-core:Assembly)
+SubClassOf(o3po:ChristmasTree ObjectSomeValuesFrom(iof-core:hasComponentPartAtAllTimes o3po:Valve))
+
+# Class: o3po:CommonCloseControlLinePressure (common close control line pressure)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:CommonCloseControlLinePressure "def. a pressure in a control line"@en)
+AnnotationAssertion(rdfs:label o3po:CommonCloseControlLinePressure "common close control line pressure"@en)
+AnnotationAssertion(rdfs:label o3po:CommonCloseControlLinePressure "pressão de linha de controle comum de fechamento"@pt-br)
+SubClassOf(o3po:CommonCloseControlLinePressure o3po:Pressure)
+SubClassOf(o3po:CommonCloseControlLinePressure ObjectSomeValuesFrom(obo:RO_0000080 o3po:ControlLine))
+
+# Class: o3po:Condensate (condensate)
+
+AnnotationAssertion(oboInOwl:source o3po:Condensate "https://www.mckinseyenergyinsights.com/resources/refinery-reference-desk/condensate/"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Condensate "def. crude oil that is a mixture of light liquid hydrocarbons, similar to a very light crude oil"@en)
+AnnotationAssertion(rdfs:comment o3po:Condensate "Condensate is a mixture of light liquid hydrocarbons, similar to a very light (high API) crude oil. It is typically separated out of a natural gas stream at the point of production (field separation) when the temperature and pressure of the gas is dropped to atmospheric conditions."@en)
+AnnotationAssertion(rdfs:label o3po:Condensate "condensado"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Condensate "condensate"@en)
+SubClassOf(o3po:Condensate o3po:CrudeOil)
+DisjointClasses(o3po:Condensate o3po:Water)
+
+# Class: o3po:ControlLine (control line)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ControlLine "def. a tube that is a small-diameter hydraulic line used to operate downhole completion equipment"@en)
+AnnotationAssertion(rdfs:comment o3po:ControlLine "A small-diameter hydraulic line used to operate downhole completion equipment such as the surface controlled subsurface safety valve (SCSSV). Most systems operated by control line operate on a fail-safe basis."@en)
+AnnotationAssertion(rdfs:label o3po:ControlLine "control line"@en)
+AnnotationAssertion(rdfs:label o3po:ControlLine "linha de controle"@pt-br)
+SubClassOf(o3po:ControlLine o3po:Tube)
+
+# Class: o3po:CrudeOil (crude oil)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:CrudeOil "def. petroleum that exists as a liquid in underground geologic formations and remains a liquid when brought to the surface"@en)
+AnnotationAssertion(rdfs:label o3po:CrudeOil "crude oil"@en)
+AnnotationAssertion(rdfs:label o3po:CrudeOil "óleo cru"@pt-br)
+AnnotationAssertion(rdfs:seeAlso o3po:CrudeOil "https://en.wikipedia.org/wiki/Petroleum")
+SubClassOf(o3po:CrudeOil o3po:Petroleum)
+SubClassOf(o3po:CrudeOil ObjectSomeValuesFrom(obo:BFO_0000050 o3po:Petroleum))
+DisjointClasses(o3po:CrudeOil o3po:NaturalGas)
+
+# Class: o3po:DeltaPressure (delta pressure)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:DeltaPressure "def. a relational quality that is a pressure difference"@en)
+AnnotationAssertion(rdfs:label o3po:DeltaPressure "delta pressure"@en)
+AnnotationAssertion(rdfs:label o3po:DeltaPressure "diferencial de pressão"@pt-br)
+SubClassOf(o3po:DeltaPressure obo:BFO_0000145)
+
+# Class: o3po:FPSO (floating production, storage, and offloading vessel)
+
+AnnotationAssertion(oboInOwl:source o3po:FPSO "https://www.glossary.oilfield.slb.com/Terms/f/fpso.aspx"@en)
+AnnotationAssertion(CommonCoreOntologies:acronym o3po:FPSO "FPSO"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:FPSO "def. an offshore platform that serves as gathering, processing and storage facilities for fluids produced from subsea wells"@en)
+AnnotationAssertion(rdfs:comment o3po:FPSO "Abbreviation for floating production, storage, and offloading vessel. FPSOs are commonly deployed for offshore production in locations that have little infrastructure. They serve as gathering, processing and storage facilities for fluids produced from subsea wells. Processed using equipment on the ship's deck, the fluids are then stored in the ship's hull before they are offloaded to pipelines, barges, or ships."@en)
+AnnotationAssertion(rdfs:label o3po:FPSO "FPSO"@pt-br)
+AnnotationAssertion(rdfs:label o3po:FPSO "floating production, storage, and offloading vessel"@en)
+SubClassOf(o3po:FPSO o3po:Platform)
+DisjointClasses(o3po:FPSO o3po:Semisubmersible)
+
+# Class: o3po:Field (field)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Field "def. a two-dimensional continuant faunal boundary that is an area where one or more reservoirs, grouped on by the same individual geological structural feature and/or stratigraphic condition, exist in the subsurface with the possibility of sufficient economic benefit worthy of commercial attention for exploration and production of hydrocarbons"@en)
+AnnotationAssertion(rdfs:label o3po:Field "campo"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Field "field"@en)
+SubClassOf(o3po:Field obo:BFO_0000146)
+SubClassOf(o3po:Field ObjectSomeValuesFrom(obo:RO_0001025 o3po:Basin))
+
+# Class: o3po:FieldName (field name)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:FieldName "def. a name that specifically denominates a field"@en)
+AnnotationAssertion(rdfs:label o3po:FieldName "field name"@en)
+AnnotationAssertion(rdfs:label o3po:FieldName "nome do campo"@pt-br)
+SubClassOf(o3po:FieldName o3po:Name)
+SubClassOf(o3po:FieldName ObjectSomeValuesFrom(obo:BFO_0000197 o3po:Field))
+
+# Class: o3po:Flow (flow)
+
+AnnotationAssertion(oboInOwl:hasRelatedSynonym o3po:Flow "fluid flow"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Flow "def. a process that has participant some fluid and the fluid is in continuous movement"@en)
+AnnotationAssertion(rdfs:comment o3po:Flow "The continuous movement characteristic of a liquid or gas."@en)
+AnnotationAssertion(rdfs:label o3po:Flow "flow"@en)
+AnnotationAssertion(rdfs:label o3po:Flow "fluxo"@pt-br)
+SubClassOf(o3po:Flow obo:BFO_0000015)
+SubClassOf(o3po:Flow ObjectSomeValuesFrom(obo:RO_0000057 o3po:Fluid))
+
+# Class: o3po:FlowRate (vazão)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:FlowRate "def. a IOF:process characteristic that is volume of fluid which flows per unit of time"@en)
+AnnotationAssertion(rdfs:comment o3po:FlowRate "The volume of fluid which flows per unit of time"@en)
+AnnotationAssertion(rdfs:label o3po:FlowRate "flow rate"@en)
+AnnotationAssertion(rdfs:label o3po:FlowRate "vazão"@pt-br)
+SubClassOf(o3po:FlowRate iof-core:ProcessCharacteristic)
+SubClassOf(o3po:FlowRate ObjectSomeValuesFrom(iof-core:processCharacteristicOf o3po:Flow))
+
+# Class: o3po:FlowRateMeasurementDatum (dado de medição de vazão)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:FlowRateMeasurementDatum "def. a measurement information content entity about flow rate"@en)
+AnnotationAssertion(rdfs:label o3po:FlowRateMeasurementDatum "dado de medição de vazão"@pt-br)
+AnnotationAssertion(rdfs:label o3po:FlowRateMeasurementDatum "flow rate measurement datum"@en)
+SubClassOf(o3po:FlowRateMeasurementDatum iof-core:MeasurementInformationContentEntity)
+
+# Class: o3po:Flowline (flowline)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Flowline "def. a pipeline that carries oil, gas or water that connects the wellhead to a manifold or to a platform"@en)
+AnnotationAssertion(rdfs:label o3po:Flowline "flowline"@en)
+AnnotationAssertion(rdfs:label o3po:Flowline "linha de fluxo"@pt-br)
+SubClassOf(o3po:Flowline o3po:Pipeline)
+SubClassOf(o3po:Flowline ObjectSomeValuesFrom(o3po:connectedTo o3po:ChristmasTree))
+
+# Class: o3po:Flowmeter (flowmeter)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Flowmeter "def. a sensor that measures the flow rate of fluids through a pipeline"@en)
+AnnotationAssertion(rdfs:comment o3po:Flowmeter "An instrument that measures the flow rate of fluids through a pipeline."@en)
+AnnotationAssertion(rdfs:label o3po:Flowmeter "flowmeter"@en)
+AnnotationAssertion(rdfs:label o3po:Flowmeter "medidor de vazão"@pt-br)
+AnnotationAssertion(rdfs:seeAlso o3po:Flowmeter "https://glossary.oilfield.slb.com/en/Terms/f/flowmeter.aspx"@en)
+SubClassOf(o3po:Flowmeter o3po:Sensor)
+SubClassOf(o3po:Flowmeter ObjectSomeValuesFrom(o3po:measures o3po:FlowRate))
+
+# Class: o3po:Fluid (fluid (portion of))
+
+AnnotationAssertion(obo:IAO_0000112 o3po:Fluid "A puddle of water, this particular pile of sand, a barrel of oil."@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Fluid "def. a obo:Object that is in liquid or gas form and is able to flow in response to external pressure and has no fixed shape"@en)
+AnnotationAssertion(rdfs:comment o3po:Fluid "Portion of Substance (e.g., liquid or gas) that tends/is able to flow in response to external pressure and has no fixed shape."@en)
+AnnotationAssertion(rdfs:label o3po:Fluid "fluid (portion of)"@en)
+AnnotationAssertion(rdfs:label o3po:Fluid "fluido (porção de)"@pt-br)
+SubClassOf(o3po:Fluid obo:BFO_0000030)
+
+# Class: o3po:GasLiftValve (válvula de gas-lift)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:GasLiftValve "def. a valve used in gas-lift operations"@en)
+AnnotationAssertion(rdfs:label o3po:GasLiftValve "gas-lift valve"@en)
+AnnotationAssertion(rdfs:label o3po:GasLiftValve "válvula de gas-lift"@pt-br)
+SubClassOf(o3po:GasLiftValve o3po:Valve)
+
+# Class: o3po:ICV (válvula de controle de influxo)
+
+AnnotationAssertion(obo:IAO_0000118 o3po:ICV "válvula de completação inteligente"@pt-br)
+AnnotationAssertion(CommonCoreOntologies:acronym o3po:ICV "ICV"@en)
+AnnotationAssertion(rdfs:label o3po:ICV "inflow control valve"@en)
+AnnotationAssertion(rdfs:label o3po:ICV "válvula de controle de influxo"@pt-br)
+SubClassOf(o3po:ICV o3po:Valve)
+SubClassOf(o3po:ICV ObjectSomeValuesFrom(iof-core:hasQuality o3po:ICVAnnularPressure))
+SubClassOf(o3po:ICV ObjectSomeValuesFrom(iof-core:hasQuality o3po:ICVAnnularTemperature))
+SubClassOf(o3po:ICV ObjectSomeValuesFrom(iof-core:hasQuality o3po:ICVDeltaPressure))
+SubClassOf(o3po:ICV ObjectSomeValuesFrom(iof-core:hasQuality o3po:ICVOpenControlLinePressure))
+SubClassOf(o3po:ICV ObjectSomeValuesFrom(o3po:componentOf o3po:Tubing))
+
+# Class: o3po:ICVAnnularPressure (ICV annular pressure)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ICVAnnularPressure "def. a pressure quality that inheres in the annular space of an ICV"@en)
+AnnotationAssertion(rdfs:label o3po:ICVAnnularPressure "ICV annular pressure"@en)
+AnnotationAssertion(rdfs:label o3po:ICVAnnularPressure "pressão no anular do ICV"@pt-br)
+SubClassOf(o3po:ICVAnnularPressure o3po:Pressure)
+SubClassOf(o3po:ICVAnnularPressure ObjectSomeValuesFrom(obo:RO_0000080 o3po:ICV))
+
+# Class: o3po:ICVAnnularTemperature (temperatura no anular do ICV)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ICVAnnularTemperature "def. a temperature quality that inheres in the annular space of an ICV"@en)
+AnnotationAssertion(rdfs:label o3po:ICVAnnularTemperature "ICV annular temperature"@en)
+AnnotationAssertion(rdfs:label o3po:ICVAnnularTemperature "temperatura no anular do ICV"@pt-br)
+SubClassOf(o3po:ICVAnnularTemperature o3po:Temperature)
+SubClassOf(o3po:ICVAnnularTemperature ObjectSomeValuesFrom(obo:RO_0000080 o3po:ICV))
+
+# Class: o3po:ICVDeltaPressure (pressão delta do ICV)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ICVDeltaPressure "def. a pressure quality that represents the pressure difference across an ICV"@en)
+AnnotationAssertion(rdfs:label o3po:ICVDeltaPressure "ICV delta pressure"@en)
+AnnotationAssertion(rdfs:label o3po:ICVDeltaPressure "pressão delta do ICV"@pt-br)
+SubClassOf(o3po:ICVDeltaPressure o3po:Pressure)
+SubClassOf(o3po:ICVDeltaPressure ObjectSomeValuesFrom(obo:RO_0000080 o3po:ICV))
+
+# Class: o3po:ICVFlowRate (vazão na ICV)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ICVFlowRate "def. a flow rate that is a process characteristic of a flow that occurs inside an ICV"@en)
+AnnotationAssertion(rdfs:comment o3po:ICVFlowRate "the rate of a flow that occurs inside an ICV"@en)
+AnnotationAssertion(rdfs:label o3po:ICVFlowRate "ICV flow rate"@en)
+AnnotationAssertion(rdfs:label o3po:ICVFlowRate "vazão na ICV"@pt-br)
+SubClassOf(o3po:ICVFlowRate o3po:FlowRate)
+DisjointClasses(o3po:ICVFlowRate o3po:WellFlowRate)
+
+# Class: o3po:ICVFlowRateICVMethod (vazão da ICV método ICV)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ICVFlowRateICVMethod "def. a flow rate measurement datum about ICV flow rate determined using the ICV method"@en)
+AnnotationAssertion(rdfs:label o3po:ICVFlowRateICVMethod "ICV flow rate ICV method"@en)
+AnnotationAssertion(rdfs:label o3po:ICVFlowRateICVMethod "vazão da ICV método ICV"@pt-br)
+SubClassOf(o3po:ICVFlowRateICVMethod o3po:FlowRateMeasurementDatum)
+SubClassOf(o3po:ICVFlowRateICVMethod ObjectSomeValuesFrom(iof-core:isAbout o3po:ICVFlowRate))
+
+# Class: o3po:ICVFlowRateIPRMethod (ICV flow rate IPR method)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ICVFlowRateIPRMethod "def. a flow rate measurement datum about ICV flow rate determined using the IPR (Inflow Performance Relationship) method"@en)
+AnnotationAssertion(rdfs:label o3po:ICVFlowRateIPRMethod "ICV flow rate IPR method"@en)
+AnnotationAssertion(rdfs:label o3po:ICVFlowRateIPRMethod "vazão da ICV método IPR"@pt-br)
+SubClassOf(o3po:ICVFlowRateIPRMethod o3po:FlowRateMeasurementDatum)
+SubClassOf(o3po:ICVFlowRateIPRMethod ObjectSomeValuesFrom(iof-core:isAbout o3po:ICVFlowRate))
+
+# Class: o3po:ICVFlowRateReconciledMethod (vazão da ICV método reconciliado)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ICVFlowRateReconciledMethod "def. a flow rate measurement datum about ICV flow rate determined using a reconciled method that combines multiple measurement sources"@en)
+AnnotationAssertion(rdfs:label o3po:ICVFlowRateReconciledMethod "ICV flow rate reconciled method"@en)
+AnnotationAssertion(rdfs:label o3po:ICVFlowRateReconciledMethod "vazão da ICV método reconciliado"@pt-br)
+SubClassOf(o3po:ICVFlowRateReconciledMethod o3po:FlowRateMeasurementDatum)
+SubClassOf(o3po:ICVFlowRateReconciledMethod ObjectSomeValuesFrom(iof-core:isAbout o3po:ICVFlowRate))
+
+# Class: o3po:ICVOpenControlLinePressure (ICV open control line pressure)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ICVOpenControlLinePressure "def. a pressure quality that inheres in the open control line of an ICV"@en)
+AnnotationAssertion(rdfs:label o3po:ICVOpenControlLinePressure "ICV open control line pressure"@en)
+AnnotationAssertion(rdfs:label o3po:ICVOpenControlLinePressure "pressão na linha de controle aberta do ICV"@pt-br)
+SubClassOf(o3po:ICVOpenControlLinePressure o3po:Pressure)
+SubClassOf(o3po:ICVOpenControlLinePressure ObjectSomeValuesFrom(obo:RO_0000080 o3po:ICV))
+
+# Class: o3po:InjectionFluid (fluido de injeção)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:InjectionFluid "def. a fluid that has role some injection role"@en)
+AnnotationAssertion(rdfs:comment o3po:InjectionFluid "Fluid injected by an injection well."@en)
+AnnotationAssertion(rdfs:label o3po:InjectionFluid "fluido de injeção"@pt-br)
+AnnotationAssertion(rdfs:label o3po:InjectionFluid "injection fluid"@en)
+SubClassOf(o3po:InjectionFluid o3po:Fluid)
+SubClassOf(o3po:InjectionFluid ObjectSomeValuesFrom(iof-core:hasRole o3po:InjectionRole))
+DisjointClasses(o3po:InjectionFluid o3po:ProductionFluid)
+
+# Class: o3po:InjectionProcess (injeção (processo))
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:InjectionProcess "def. a flow that has an injection well as participant and is towards a reservoir"@en)
+AnnotationAssertion(rdfs:comment o3po:InjectionProcess "Injection of gases or liquids into a reservoir to force oil toward and into producing wells."@en)
+AnnotationAssertion(rdfs:label o3po:InjectionProcess "injection (process)"@en)
+AnnotationAssertion(rdfs:label o3po:InjectionProcess "injeção (processo)"@pt-br)
+SubClassOf(o3po:InjectionProcess o3po:Flow)
+SubClassOf(o3po:InjectionProcess ObjectSomeValuesFrom(obo:RO_0000057 o3po:Fluid))
+SubClassOf(o3po:InjectionProcess ObjectSomeValuesFrom(obo:RO_0000057 o3po:InjectionWell))
+SubClassOf(o3po:InjectionProcess ObjectSomeValuesFrom(obo:RO_0000057 o3po:Reservoir))
+DisjointClasses(o3po:InjectionProcess o3po:ProductionProcess)
+
+# Class: o3po:InjectionRole (papel de injeção)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:InjectionRole "def. a role borne by a fluid that is being injected into a well"@en)
+AnnotationAssertion(rdfs:comment o3po:InjectionRole "Role assumed by a fluid that is being injected into a well."@en)
+AnnotationAssertion(rdfs:label o3po:InjectionRole "injection role"@en)
+AnnotationAssertion(rdfs:label o3po:InjectionRole "papel de injeção"@pt-br)
+SubClassOf(o3po:InjectionRole obo:BFO_0000023)
+SubClassOf(o3po:InjectionRole ObjectSomeValuesFrom(iof-core:roleOf o3po:InjectionFluid))
+SubClassOf(o3po:InjectionRole ObjectAllValuesFrom(iof-core:roleOf o3po:InjectionFluid))
+
+# Class: o3po:InjectionWell (poço de injeção)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:InjectionWell "def. a well where fluids are injected rather than produced, the primary objective typically being to maintain reservoir pressure"@en)
+AnnotationAssertion(rdfs:label o3po:InjectionWell "injection well"@en)
+AnnotationAssertion(rdfs:label o3po:InjectionWell "poço de injeção"@pt-br)
+AnnotationAssertion(rdfs:seeAlso o3po:InjectionWell "https://petrowiki.spe.org/Glossary:Injection_well")
+SubClassOf(o3po:InjectionWell o3po:Well)
+SubClassOf(o3po:InjectionWell ObjectSomeValuesFrom(obo:RO_0000087 o3po:InjectorRole))
+DisjointClasses(o3po:InjectionWell o3po:ProductionWell)
+
+# Class: o3po:InjectorRole (papel de injetor)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:InjectorRole "def. a role borne by a well that injects fluids"@en)
+AnnotationAssertion(rdfs:label o3po:InjectorRole "injector role"@en)
+AnnotationAssertion(rdfs:label o3po:InjectorRole "papel de injetor"@pt-br)
+SubClassOf(o3po:InjectorRole obo:BFO_0000023)
+SubClassOf(o3po:InjectorRole ObjectSomeValuesFrom(iof-core:roleOf o3po:Well))
+SubClassOf(o3po:InjectorRole ObjectAllValuesFrom(iof-core:roleOf o3po:Well))
+
+# Class: o3po:Manifold (manifold)
+
+AnnotationAssertion(dce:source o3po:Manifold "https://www.glossary.oilfield.slb.com/en/Terms/m/manifold.aspx"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Manifold "def. an assembly that has disposition to connect several flowlines and designed to control, distribute and typically monitor fluid flow from or to multiple wells"@en)
+AnnotationAssertion(rdfs:comment o3po:Manifold "An arrangement of piping or valves designed to control, distribute and typically monitor fluid flow."@en)
+AnnotationAssertion(rdfs:label o3po:Manifold "manifold"@en)
+AnnotationAssertion(rdfs:label o3po:Manifold "manifold"@pt-br)
+SubClassOf(o3po:Manifold iof-core:Assembly)
+SubClassOf(o3po:Manifold ObjectSomeValuesFrom(o3po:hasComponent o3po:Tube))
+SubClassOf(o3po:Manifold ObjectSomeValuesFrom(o3po:hasComponent o3po:Valve))
+
+# Class: o3po:Name (name)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Name "def. a quality that serves as a linguistic identifier for an entity"@en)
+AnnotationAssertion(rdfs:label o3po:Name "name"@en)
+AnnotationAssertion(rdfs:label o3po:Name "nome"@pt-br)
+SubClassOf(o3po:Name obo:BFO_0000019)
+
+# Class: o3po:NaturalGas (natural gas)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:NaturalGas "def. petroleum that is composed of a hydrocarbon gas mixture consisting primarily of methane, but commonly includes varying amounts of other higher alkanes and sometimes a usually lesser percentage of carbon dioxide, nitrogen, and/or hydrogen sulfide"@en)
+AnnotationAssertion(rdfs:label o3po:NaturalGas "gás natural"@pt-br)
+AnnotationAssertion(rdfs:label o3po:NaturalGas "natural gas"@en)
+AnnotationAssertion(rdfs:seeAlso o3po:NaturalGas "https://en.wikipedia.org/wiki/Natural_gas")
+SubClassOf(o3po:NaturalGas o3po:Petroleum)
+DisjointClasses(o3po:NaturalGas o3po:Water)
+
+# Class: o3po:Nozzle (bocal)
+
+AnnotationAssertion(dce:description o3po:Nozzle "A nozzle is a device designed to control the direction or characteristics of a fluid flow (specially to increase velocity) as it exits (or enters) an enclosed chamber or pipe. A nozzle is often a pipe or tube of varying cross sectional area, and it can be used to direct or modify the flow of a fluid (liquid or gas). Nozzles are frequently used to control the rate of flow, speed, direction, mass, shape, and/or the pressure of the stream that emerges from them. In a nozzle, the velocity of fluid increases at the expense of its pressure energy."@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Nozzle "def. a material artifact that has a protruding part through which a stream of fluid is directed"@en)
+AnnotationAssertion(rdfs:label o3po:Nozzle "bocal"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Nozzle "nozzle"@en)
+SubClassOf(o3po:Nozzle iof-core:MaterialArtifact)
+
+# Class: o3po:ObservationRole (observation role)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ObservationRole "def. a role borne by a well used for observation"@en)
+AnnotationAssertion(rdfs:label o3po:ObservationRole "observation role"@en)
+AnnotationAssertion(rdfs:label o3po:ObservationRole "papel de observação"@pt-br)
+SubClassOf(o3po:ObservationRole obo:BFO_0000023)
+SubClassOf(o3po:ObservationRole ObjectSomeValuesFrom(iof-core:roleOf o3po:ObservationWell))
+SubClassOf(o3po:ObservationRole ObjectAllValuesFrom(iof-core:roleOf o3po:ObservationWell))
+
+# Class: o3po:ObservationWell (poço de observação)
+
+AnnotationAssertion(oboInOwl:source o3po:ObservationWell "Oil and Gas Wells, Pennsylvania Code, Title 25, Chapter 78, December 2012."@en)
+AnnotationAssertion(oboInOwl:source o3po:ObservationWell "https://iadclexicon.org/observation-well/"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ObservationWell "def. a well that bears an observation role"@en)
+AnnotationAssertion(rdfs:comment o3po:ObservationWell "A well used to monitor the operational integrity and conditions in a gas storage reservoir, the reservoir protective area or strata above or below the gas storage horizon."@en)
+AnnotationAssertion(rdfs:label o3po:ObservationWell "observation well"@en)
+AnnotationAssertion(rdfs:label o3po:ObservationWell "poço de observação"@pt-br)
+SubClassOf(o3po:ObservationWell o3po:Well)
+SubClassOf(o3po:ObservationWell ObjectSomeValuesFrom(iof-core:hasRole o3po:ObservationRole))
+
+# Class: o3po:PLEM (manifold de término de tubulação)
+
+AnnotationAssertion(oboInOwl:source o3po:PLEM "https://oilstates.com/offshore/subsea-pipeline-products/plem-plet-structures/")
+AnnotationAssertion(CommonCoreOntologies:acronym o3po:PLEM "PLEM")
+AnnotationAssertion(CommonCoreOntologies:definition o3po:PLEM "def. a manifold that splits the product flow into multiple routes that may feed into an FPSO, refinery and holding tanks concurrently"@en)
+AnnotationAssertion(rdfs:label o3po:PLEM "manifold de término de tubulação"@pt-br)
+AnnotationAssertion(rdfs:label o3po:PLEM "pipeline end manifold"@en)
+SubClassOf(o3po:PLEM o3po:Manifold)
+
+# Class: o3po:Permeability (permeabilidade (qualidade))
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Permeability "def. the measure of the ability of a porous material (often, a rock or an unconsolidated material) to allow fluids to pass through it"@en)
+AnnotationAssertion(rdfs:label o3po:Permeability "permeabilidade (qualidade)"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Permeability "permeability (quality)"@en)
+AnnotationAssertion(rdfs:seeAlso o3po:Permeability "https://en.wikipedia.org/wiki/Permeability_(Earth_sciences)"@en)
+SubClassOf(o3po:Permeability obo:BFO_0000019)
+
+# Class: o3po:Petroleum (petroleum)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Petroleum "def. an earth fluid that consists of a complex mixture of hydrocarbons of various molecular weights and other liquid organic compounds, that are found in geologic formations beneath the planetary surfaces"@en)
+AnnotationAssertion(rdfs:label o3po:Petroleum "petroleum"@en)
+AnnotationAssertion(rdfs:label o3po:Petroleum "petróleo"@pt-br)
+AnnotationAssertion(rdfs:seeAlso o3po:Petroleum "https://en.wikipedia.org/wiki/Petroleum")
+SubClassOf(o3po:Petroleum <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009>)
+SubClassOf(o3po:Petroleum ObjectSomeValuesFrom(obo:BFO_0000051 o3po:CrudeOil))
+DisjointClasses(o3po:Petroleum o3po:Water)
+
+# Class: o3po:Pipeline (tubulação)
+
+AnnotationAssertion(oboInOwl:source o3po:Pipeline "https://petrowiki.org/Glossary:Flowline"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Pipeline "def. an assembly that is necessarily composed of tubes which are connected to one another in a single, maximal/end-to-end line, and that is intended for conveying liquids, gases or finely divided solids"@en)
+AnnotationAssertion(rdfs:comment o3po:Pipeline "The pipe connection between the well and the separators or tank battery."@en)
+AnnotationAssertion(rdfs:label o3po:Pipeline "pipeline"@en)
+AnnotationAssertion(rdfs:label o3po:Pipeline "tubulação"@pt-br)
+SubClassOf(o3po:Pipeline iof-core:Assembly)
+SubClassOf(o3po:Pipeline ObjectSomeValuesFrom(o3po:hasComponent o3po:Tube))
+DisjointClasses(o3po:Pipeline o3po:Sensor)
+
+# Class: o3po:Plant (planta)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Plant "def. an engineered system located at a field"@en)
+AnnotationAssertion(rdfs:label o3po:Plant "plant"@en)
+AnnotationAssertion(rdfs:label o3po:Plant "planta"@pt-br)
+SubClassOf(o3po:Plant iof-core:EngineeredSystem)
+SubClassOf(o3po:Plant ObjectSomeValuesFrom(obo:RO_0001025 o3po:Field))
+SubClassOf(o3po:Plant ObjectSomeValuesFrom(o3po:hasComponent o3po:Platform))
+
+# Class: o3po:Platform (plataforma)
+
+AnnotationAssertion(oboInOwl:source o3po:Platform "https://petrowiki.spe.org/Glossary:Platform"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Platform "def. a material artifact that is an offshore structure from which a well may be drilled or produced"@en)
+AnnotationAssertion(rdfs:comment o3po:Platform "An offshore structure from which a well may be drilled or produced."@en)
+AnnotationAssertion(rdfs:label o3po:Platform "plataforma"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Platform "platform"@en)
+SubClassOf(o3po:Platform iof-core:MaterialArtifact)
+SubClassOf(o3po:Platform ObjectSomeValuesFrom(obo:RO_0001025 o3po:Field))
+DisjointClasses(o3po:Platform o3po:Well)
+
+# Class: o3po:PositiveDisplacementPump (positive-displacement pump)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:PositiveDisplacementPump "def. a type of fluid pump in which the displacement volume of the pump is fixed for each rotation of the pump"@en)
+AnnotationAssertion(rdfs:label o3po:PositiveDisplacementPump "bomba de deslocamento positivo"@pt-br)
+AnnotationAssertion(rdfs:label o3po:PositiveDisplacementPump "positive-displacement pump"@en)
+AnnotationAssertion(rdfs:seeAlso o3po:PositiveDisplacementPump "https://www.glossary.oilfield.slb.com/Terms/p/positive-displacement_pump.aspx")
+SubClassOf(o3po:PositiveDisplacementPump o3po:Pump)
+
+# Class: o3po:Pressure (pressão)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Pressure "def. a obo:Quality that corresponds to the degree/intensity of the force applied perpendicular to the surface of a obo:Material_Entity per unit area over which that force is distributed"@en)
+AnnotationAssertion(rdfs:comment o3po:Pressure "A quality that corresponds to the degree/intensity of the force applied perpendicular to the surface of a material entity per unit area over which that force is distributed."@en)
+AnnotationAssertion(rdfs:label o3po:Pressure "pressure"@en)
+AnnotationAssertion(rdfs:label o3po:Pressure "pressão"@pt-br)
+SubClassOf(o3po:Pressure obo:BFO_0000019)
+
+# Class: o3po:PressureDownstreamOfChoke (pressão à jusante do choke)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:PressureDownstreamOfChoke "def. a pressure measured downstream of a choke"@en)
+AnnotationAssertion(rdfs:label o3po:PressureDownstreamOfChoke "pressure downstream of choke"@en)
+AnnotationAssertion(rdfs:label o3po:PressureDownstreamOfChoke "pressão à jusante do choke"@pt-br)
+SubClassOf(o3po:PressureDownstreamOfChoke o3po:Pressure)
+SubClassOf(o3po:PressureDownstreamOfChoke ObjectSomeValuesFrom(obo:RO_0000080 o3po:Choke))
+
+# Class: o3po:PressureSensor (pressure sensor)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:PressureSensor "def. a sensor that measures the pressure of a fluid"@en)
+AnnotationAssertion(rdfs:comment o3po:PressureSensor "A device for pressure measurement of gases or liquids."@en)
+AnnotationAssertion(rdfs:label o3po:PressureSensor "pressure sensor"@en)
+AnnotationAssertion(rdfs:label o3po:PressureSensor "sensor de pressão"@pt-br)
+AnnotationAssertion(rdfs:seeAlso o3po:PressureSensor "https://en.wikipedia.org/wiki/Pressure_sensor"@en)
+SubClassOf(o3po:PressureSensor o3po:Sensor)
+SubClassOf(o3po:PressureSensor ObjectSomeValuesFrom(o3po:measures o3po:Pressure))
+
+# Class: o3po:PressureUpstreamOfChoke (pressão à montante do choke)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:PressureUpstreamOfChoke "def. a pressure measured upstream of a choke"@en)
+AnnotationAssertion(rdfs:label o3po:PressureUpstreamOfChoke "pressure upstream of choke"@en)
+AnnotationAssertion(rdfs:label o3po:PressureUpstreamOfChoke "pressão à montante do choke"@pt-br)
+SubClassOf(o3po:PressureUpstreamOfChoke o3po:Pressure)
+SubClassOf(o3po:PressureUpstreamOfChoke ObjectSomeValuesFrom(obo:RO_0000080 o3po:Choke))
+
+# Class: o3po:ProducerRole (papel de produtor)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ProducerRole "def. a role borne by a well that produces hydrocarbons"@en)
+AnnotationAssertion(rdfs:label o3po:ProducerRole "papel de produtor"@pt-br)
+AnnotationAssertion(rdfs:label o3po:ProducerRole "producer role"@en)
+SubClassOf(o3po:ProducerRole obo:BFO_0000023)
+SubClassOf(o3po:ProducerRole ObjectSomeValuesFrom(iof-core:roleOf o3po:Well))
+SubClassOf(o3po:ProducerRole ObjectAllValuesFrom(iof-core:roleOf o3po:Well))
+
+# Class: o3po:ProductionFluid (fluido de produção)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ProductionFluid "def. a fluid that has_role production_role"@en)
+AnnotationAssertion(rdfs:comment o3po:ProductionFluid "Fluid produced by a production well."@en)
+AnnotationAssertion(rdfs:label o3po:ProductionFluid "fluido de produção"@pt-br)
+AnnotationAssertion(rdfs:label o3po:ProductionFluid "production fluid"@en)
+SubClassOf(o3po:ProductionFluid o3po:Fluid)
+SubClassOf(o3po:ProductionFluid ObjectSomeValuesFrom(iof-core:hasRole o3po:ProductionRole))
+
+# Class: o3po:ProductionProcess (produção (processo))
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ProductionProcess "def. a flow that has a production well as participant and is towards a platform"@en)
+AnnotationAssertion(rdfs:comment o3po:ProductionProcess "The yield of an oil or gas well. Also that branch of the petroleum industry that has to do with bringing the well fluids to the surface and separating them, and with storing, gaging, and otherwise preparing the product for the pipeline."@en)
+AnnotationAssertion(rdfs:label o3po:ProductionProcess "production (process)"@en)
+AnnotationAssertion(rdfs:label o3po:ProductionProcess "produção (processo)"@pt-br)
+SubClassOf(o3po:ProductionProcess o3po:Flow)
+SubClassOf(o3po:ProductionProcess ObjectSomeValuesFrom(obo:RO_0000057 <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009>))
+SubClassOf(o3po:ProductionProcess ObjectSomeValuesFrom(obo:RO_0000057 o3po:ProductionWell))
+SubClassOf(o3po:ProductionProcess ObjectSomeValuesFrom(obo:RO_0000057 o3po:Reservoir))
+
+# Class: o3po:ProductionRole (papel de produção)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ProductionRole "def. a role borne by a fluid that is produced by a well"@en)
+AnnotationAssertion(rdfs:comment o3po:ProductionRole "Role assumed by a fluid that is produced by a well such as natural gas or crude oil that are being produced by a well."@en)
+AnnotationAssertion(rdfs:label o3po:ProductionRole "papel de produção"@pt-br)
+AnnotationAssertion(rdfs:label o3po:ProductionRole "production role"@en)
+SubClassOf(o3po:ProductionRole obo:BFO_0000023)
+SubClassOf(o3po:ProductionRole ObjectSomeValuesFrom(iof-core:roleOf o3po:ProductionFluid))
+SubClassOf(o3po:ProductionRole ObjectAllValuesFrom(iof-core:roleOf o3po:ProductionFluid))
+
+# Class: o3po:ProductionSeparator (production separator)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ProductionSeparator "def. a separator that separates production fluids into their constituent components of crude oil, gas and water"@en)
+AnnotationAssertion(rdfs:comment o3po:ProductionSeparator "The term separator in oilfield terminology designates a pressure vessel used for separating well fluids produced from oil and gas wells into gaseous and liquid components. A separator for petroleum production is a large vessel designed to separate production fluids into their constituent components of oil, gas and water."@en)
+AnnotationAssertion(rdfs:label o3po:ProductionSeparator "production separator"@en)
+AnnotationAssertion(rdfs:label o3po:ProductionSeparator "separador de produção"@pt-br)
+AnnotationAssertion(rdfs:seeAlso o3po:ProductionSeparator "https://en.wikipedia.org/wiki/Separator_(oil_production)"@en)
+SubClassOf(o3po:ProductionSeparator o3po:Separator)
+
+# Class: o3po:ProductionWell (production well)
+
+AnnotationAssertion(oboInOwl:source o3po:ProductionWell "https://petrowiki.spe.org/Glossary:Producing_well"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ProductionWell "def. a well that produces hydrocarbon in commercial quantities"@en)
+AnnotationAssertion(rdfs:label o3po:ProductionWell "poço de produção"@pt-br)
+AnnotationAssertion(rdfs:label o3po:ProductionWell "production well"@en)
+SubClassOf(o3po:ProductionWell o3po:Well)
+SubClassOf(o3po:ProductionWell ObjectSomeValuesFrom(obo:RO_0000087 o3po:ProducerRole))
+
+# Class: o3po:ProductionZone (production zone)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ProductionZone "def. a reservoir or a section of a reservoir that is drilled into and from which hydrocarbons are produced or into which fluids are injected"@en)
+AnnotationAssertion(rdfs:label o3po:ProductionZone "production zone"@en)
+AnnotationAssertion(rdfs:label o3po:ProductionZone "zona de produção"@pt-br)
+SubClassOf(o3po:ProductionZone o3po:Reservoir)
+
+# Class: o3po:Pump (pump)
+
+AnnotationAssertion(oboInOwl:source o3po:Pump "https://www.lexico.com/en/definition/pump"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Pump "def. a material artifact that moves fluids or fluid-like amounts (e.g., slurries) by increasing pressure of the fluid or pressure difference in a fluid flow"@en)
+AnnotationAssertion(rdfs:comment o3po:Pump "Device that moves (e.g., transfer, deliver, compress) fluids (e.g., liquids, gases) or fluid-like amounts (e.g., slurries) by increasing pressure."@en)
+AnnotationAssertion(rdfs:label o3po:Pump "bomba"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Pump "pump"@en)
+SubClassOf(o3po:Pump iof-core:MaterialArtifact)
+
+# Class: o3po:Reservoir (reservoir)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Reservoir "def. a rock that contains one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock"@en)
+AnnotationAssertion(rdfs:comment o3po:Reservoir "A rock (defined in GeoCore) containing one or more individual and separate natural accumulations of petroleum that is confined (the oil, not the reservoir) by impermeable rock."@en)
+AnnotationAssertion(rdfs:label o3po:Reservoir "reservatório"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Reservoir "reservoir"@en)
+SubClassOf(o3po:Reservoir <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008>)
+SubClassOf(o3po:Reservoir ObjectSomeValuesFrom(obo:BFO_0000051 <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009>))
+SubClassOf(o3po:Reservoir ObjectSomeValuesFrom(obo:RO_0000087 o3po:ReservoirRole))
+
+# Class: o3po:ReservoirRole (reservoir role)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:ReservoirRole "def. a role borne by a reservoir"@en)
+AnnotationAssertion(rdfs:label o3po:ReservoirRole "papel de reservatório"@pt-br)
+AnnotationAssertion(rdfs:label o3po:ReservoirRole "reservoir role"@en)
+SubClassOf(o3po:ReservoirRole obo:BFO_0000023)
+SubClassOf(o3po:ReservoirRole ObjectSomeValuesFrom(obo:RO_0000081 o3po:Reservoir))
+
+# Class: o3po:Riser (riser)
+
+AnnotationAssertion(oboInOwl:source o3po:Riser "https://petrowiki.org/Glossary:Riser"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Riser "def. a pipeline that vertically carries fluids or fluid-like amounts or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a platform"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Riser "def. a role that has bearer some pipeline"@en)
+AnnotationAssertion(rdfs:comment o3po:Riser "Pipe or pipeline that vertically carries materials (e.g., production fluids, drilling mud, drilling cuttings) or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a production and/or drilling platform."@en)
+AnnotationAssertion(rdfs:comment o3po:Riser "Pipe through which liquid travels upward."@en)
+AnnotationAssertion(rdfs:label o3po:Riser "papel de riser"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Riser "riser"@en)
+AnnotationAssertion(rdfs:label o3po:Riser "riser"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Riser "riser role"@en)
+SubClassOf(o3po:Riser obo:BFO_0000023)
+SubClassOf(o3po:Riser ObjectSomeValuesFrom(iof-core:roleOf o3po:Pipeline))
+SubClassOf(o3po:Riser ObjectAllValuesFrom(iof-core:roleOf o3po:Pipeline))
+
+# Class: o3po:Semisubmersible (semisubmersible)
+
+AnnotationAssertion(oboInOwl:source o3po:Semisubmersible "https://www.glossary.oilfield.slb.com/Terms/s/semisubmersible.aspx"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Semisubmersible "def. offshore platform that can be used for drilling, workover operations, and production platforms, depending on the equipment with which they are equipped"@en)
+AnnotationAssertion(rdfs:comment o3po:Semisubmersible "A particular type of floating vessel that is supported primarily on large pontoon-like structures submerged below the sea surface. The operating decks are elevated perhaps 100 or more feet above the pontoons on large steel columns. Semisubmersibles can operate in a wide range of water depths, including deep water."@en)
+AnnotationAssertion(rdfs:label o3po:Semisubmersible "semissubmersível"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Semisubmersible "semisubmersible"@en)
+SubClassOf(o3po:Semisubmersible o3po:Platform)
+
+# Class: o3po:Sensor (sensor)
+
+AnnotationAssertion(obo:IAO_0000112 o3po:Sensor "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of Sensors include the human eyes."@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Sensor "def. a material artifact that generates a result in response to some stimulus (e.g., a change in its environment) or input data from results of prior observations, with such result corresponding to the measurement of a physical property"@en)
+AnnotationAssertion(rdfs:comment o3po:Sensor "A device that produces an output signal for the purpose of sensing of a physical phenomenon."@en)
+AnnotationAssertion(rdfs:label o3po:Sensor "sensor"@en)
+AnnotationAssertion(rdfs:label o3po:Sensor "sensor"@pt-br)
+AnnotationAssertion(rdfs:seeAlso o3po:Sensor "https://en.wikipedia.org/wiki/Sensor"^^xsd:anyURI)
+SubClassOf(o3po:Sensor iof-core:MaterialArtifact)
+
+# Class: o3po:Separator (separador)
+
+AnnotationAssertion(oboInOwl:source o3po:Separator "https://petrowiki.spe.org/Glossary:Separator"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Separator "def. a material artifact that facilitates the separation of gas, oil, and/or water from a produced fluid stream"@en)
+AnnotationAssertion(rdfs:comment o3po:Separator "A production treating vessel designed to facilitate the separation of gas, oil, and/or water from a produced fluid stream."@en)
+AnnotationAssertion(rdfs:label o3po:Separator "separador"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Separator "separator"@en)
+SubClassOf(o3po:Separator iof-core:MaterialArtifact)
+
+# Class: o3po:SubseaTree (subsea tree)
+
+AnnotationAssertion(obo:IAO_0000118 o3po:SubseaTree "subsea christmas tree"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:SubseaTree "def. a christmas tree that is projected to work at subsea"@en)
+AnnotationAssertion(rdfs:label o3po:SubseaTree "subsea tree"@en)
+AnnotationAssertion(rdfs:label o3po:SubseaTree "árvore de natal molhada"@pt-br)
+AnnotationAssertion(rdfs:seeAlso o3po:SubseaTree "https://en.wikipedia.org/wiki/Christmas_tree_(oil_well)")
+SubClassOf(o3po:SubseaTree o3po:ChristmasTree)
+
+# Class: o3po:Tag (tag)
+
+AnnotationAssertion(obo:IAO_0000112 o3po:Tag "PT-001, TT-102, PCV-205"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Tag "def. an identifier used in industrial contexts to uniquely reference equipment, instruments, or systems within a plant"@en)
+AnnotationAssertion(rdfs:comment o3po:Tag "Tags follow standardized naming conventions (e.g., ISA-5.1) to ensure consistency across engineering documentation."@en)
+AnnotationAssertion(rdfs:label o3po:Tag "etiqueta"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Tag "tag"@en)
+SubClassOf(o3po:Tag iof-core:Identifier)
+
+# Class: o3po:Temperature (temperature)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Temperature "def. a obo:Quality that corresponds to the degree/intensity of the thermal energy of a obo:Material_Entity"@en)
+AnnotationAssertion(rdfs:comment o3po:Temperature "A quality that corresponds to the degree/intensity of the thermal energy of a material entity."@en)
+AnnotationAssertion(rdfs:label o3po:Temperature "temperatura"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Temperature "temperature"@en)
+SubClassOf(o3po:Temperature obo:BFO_0000019)
+
+# Class: o3po:TemperatureDownstreamOfChoke (temperatura à jusante do choke)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:TemperatureDownstreamOfChoke "def. a temperature measured downstream of a choke"@en)
+AnnotationAssertion(rdfs:label o3po:TemperatureDownstreamOfChoke "temperatura à jusante do choke"@pt-br)
+AnnotationAssertion(rdfs:label o3po:TemperatureDownstreamOfChoke "temperature downstream of choke"@en)
+SubClassOf(o3po:TemperatureDownstreamOfChoke o3po:Temperature)
+SubClassOf(o3po:TemperatureDownstreamOfChoke ObjectSomeValuesFrom(obo:RO_0000080 o3po:Choke))
+
+# Class: o3po:TemperatureSensor (temperature sensor)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:TemperatureSensor "def. a sensor that measures the temperature of a fluid"@en)
+AnnotationAssertion(rdfs:comment o3po:TemperatureSensor "A device that measures temperature or a temperature gradient (the degree of hotness or coldness of an object)."@en)
+AnnotationAssertion(rdfs:label o3po:TemperatureSensor "sensor de temperatura"@pt-br)
+AnnotationAssertion(rdfs:label o3po:TemperatureSensor "temperature sensor"@en)
+AnnotationAssertion(rdfs:seeAlso o3po:TemperatureSensor "https://en.wikipedia.org/wiki/Thermometer"@en)
+SubClassOf(o3po:TemperatureSensor o3po:Sensor)
+SubClassOf(o3po:TemperatureSensor ObjectSomeValuesFrom(o3po:measures o3po:Temperature))
+
+# Class: o3po:TemperatureUpstreamOfChoke (temperatura à montante do choke)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:TemperatureUpstreamOfChoke "def. a temperature measured upstream of a choke"@en)
+AnnotationAssertion(rdfs:label o3po:TemperatureUpstreamOfChoke "temperatura à montante do choke"@pt-br)
+AnnotationAssertion(rdfs:label o3po:TemperatureUpstreamOfChoke "temperature upstream of choke"@en)
+SubClassOf(o3po:TemperatureUpstreamOfChoke o3po:Temperature)
+SubClassOf(o3po:TemperatureUpstreamOfChoke ObjectSomeValuesFrom(obo:RO_0000080 o3po:Choke))
+
+# Class: o3po:TestSeparator (separador de teste)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:TestSeparator "def. a separator that is used to separate and meter relatively small quantities of oil and gas"@en)
+AnnotationAssertion(rdfs:comment o3po:TestSeparator "A vessel used to separate and meter relatively small quantities of oil and gas. Test separators can be two-phase or three-phase, or horizontal, vertical or spherical. They can also be permanent or portable."@en)
+AnnotationAssertion(rdfs:label o3po:TestSeparator "separador de teste"@pt-br)
+AnnotationAssertion(rdfs:label o3po:TestSeparator "test separator"@en)
+AnnotationAssertion(rdfs:seeAlso o3po:TestSeparator "https://glossary.oilfield.slb.com/Terms/t/test_separator.aspx"@en)
+SubClassOf(o3po:TestSeparator o3po:Separator)
+
+# Class: o3po:Tube (tubo)
+
+AnnotationAssertion(oboInOwl:hasRelatedSynonym o3po:Tube "duct"@en)
+AnnotationAssertion(oboInOwl:hasRelatedSynonym o3po:Tube "pipe"@en)
+AnnotationAssertion(oboInOwl:hasRelatedSynonym o3po:Tube "tubular"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Tube "def. a material artifact that is long, enclosed and hollow and that acts as a passageway to carry different sorts of things (e.g., fluids, cables, other ducts)"@en)
+AnnotationAssertion(rdfs:comment o3po:Tube "Functional Object / Material Artifact that is enclosed and hollow and that acts as a passageway to carry different sorts of things (e.g., fluids, cables, other ducts)."@en)
+AnnotationAssertion(rdfs:label o3po:Tube "tube"@en)
+AnnotationAssertion(rdfs:label o3po:Tube "tubo"@pt-br)
+SubClassOf(o3po:Tube iof-core:MaterialArtifact)
+
+# Class: o3po:Tubing (tubing)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Tubing "def. a pipeline that is inside a well"@en)
+AnnotationAssertion(rdfs:label o3po:Tubing "coluna de produção"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Tubing "tubing"@en)
+SubClassOf(o3po:Tubing o3po:Pipeline)
+SubClassOf(o3po:Tubing ObjectSomeValuesFrom(obo:RO_0000087 o3po:TubingRole))
+SubClassOf(o3po:Tubing ObjectSomeValuesFrom(iof-core:componentPartOfAtSomeTime o3po:Well))
+
+# Class: o3po:TubingDownholePressure (tubing downhole pressure)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:TubingDownholePressure "def. a pressure measured at the downhole location of tubing"@en)
+AnnotationAssertion(rdfs:label o3po:TubingDownholePressure "pressão de fundo do tubing"@pt-br)
+AnnotationAssertion(rdfs:label o3po:TubingDownholePressure "tubing downhole pressure"@en)
+SubClassOf(o3po:TubingDownholePressure o3po:Pressure)
+SubClassOf(o3po:TubingDownholePressure ObjectSomeValuesFrom(iof-core:qualityOf o3po:Tubing))
+
+# Class: o3po:TubingDownholeTemperature (temperatura de fundo do tubing)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:TubingDownholeTemperature "def. a temperature measured at the downhole location of tubing"@en)
+AnnotationAssertion(rdfs:label o3po:TubingDownholeTemperature "temperatura de fundo do tubing"@pt-br)
+AnnotationAssertion(rdfs:label o3po:TubingDownholeTemperature "tubing downhole temperature"@en)
+SubClassOf(o3po:TubingDownholeTemperature o3po:Temperature)
+SubClassOf(o3po:TubingDownholeTemperature ObjectSomeValuesFrom(iof-core:qualityOf o3po:Tubing))
+
+# Class: o3po:TubingRole (papel de tubing)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:TubingRole "def. a role borne by a pipeline that is inside a well"@en)
+AnnotationAssertion(rdfs:label o3po:TubingRole "papel de tubing"@pt-br)
+AnnotationAssertion(rdfs:label o3po:TubingRole "tubing role"@en)
+SubClassOf(o3po:TubingRole obo:BFO_0000023)
+SubClassOf(o3po:TubingRole ObjectSomeValuesFrom(iof-core:roleOf o3po:Pipeline))
+SubClassOf(o3po:TubingRole ObjectAllValuesFrom(iof-core:roleOf o3po:Pipeline))
+
+# Class: o3po:Valve (válvula)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Valve "def. a functional complex that controls flow of fluids or fluid-like amounts (e.g., slurries, fluidized solids)"@en)
+AnnotationAssertion(rdfs:comment o3po:Valve "Device that controls (e.g., permits, obstructs, regulates, directs) a stream/flow of fluids (e.g., gases, liquids) or fluid-like amounts (e.g., slurries, fluidized solids)."@en)
+AnnotationAssertion(rdfs:label o3po:Valve "valve"@en)
+AnnotationAssertion(rdfs:label o3po:Valve "válvula"@pt-br)
+SubClassOf(o3po:Valve iof-core:MaterialArtifact)
+
+# Class: o3po:Variable (variable)
+
+AnnotationAssertion(obo:IAO_0000112 o3po:Variable "flow rate, pressure, temperature"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Variable "def. an information content entity that represents a measurable attribute or parameter that can change over time in a production system"@en)
+AnnotationAssertion(rdfs:label o3po:Variable "variable"@en)
+AnnotationAssertion(rdfs:label o3po:Variable "variável"@pt-br)
+SubClassOf(o3po:Variable iof-core:InformationContentEntity)
+
+# Class: o3po:Volume (volume)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Volume "def. a quality that represents the amount of three-dimensional space occupied by a fluid"@en)
+AnnotationAssertion(rdfs:label o3po:Volume "volume"@en)
+AnnotationAssertion(rdfs:label o3po:Volume "volume"@pt-br)
+SubClassOf(o3po:Volume obo:BFO_0000019)
+SubClassOf(o3po:Volume ObjectSomeValuesFrom(iof-core:qualityOf o3po:Fluid))
+
+# Class: o3po:Water (água)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Water "def. an earth fluid that has chemical formula H2O and is inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance"@en)
+AnnotationAssertion(rdfs:comment o3po:Water "Water (chemical formula H2O) is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms."@en)
+AnnotationAssertion(rdfs:label o3po:Water "water"@en)
+AnnotationAssertion(rdfs:label o3po:Water "água"@pt-br)
+SubClassOf(o3po:Water <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009>)
+
+# Class: o3po:Well (poço)
+
+AnnotationAssertion(oboInOwl:source o3po:Well "https://petrowiki.spe.org/Glossary:Completed_well"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Well "def. a material artifact that is used to produce hydrocarbons or inject fluids and is located in a wellbore"@en)
+AnnotationAssertion(rdfs:comment o3po:Well "A well that has been drilled, cased and cemented and is ready to produce hydrocarbons."@en)
+AnnotationAssertion(rdfs:label o3po:Well "poço"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Well "well"@en)
+SubClassOf(o3po:Well iof-core:MaterialArtifact)
+SubClassOf(o3po:Well ObjectSomeValuesFrom(obo:BFO_0000051 o3po:Borehole))
+SubClassOf(o3po:Well ObjectSomeValuesFrom(obo:RO_0000086 o3po:BottomholePressure))
+
+# Class: o3po:WellFlowRate (well liquid rate)
+
+AnnotationAssertion(obo:IAO_0000112 o3po:WellFlowRate "production rate of a well, injection rate of a well"@en)
+AnnotationAssertion(CommonCoreOntologies:definition o3po:WellFlowRate "def. the flow rate that has only crude oil and water as participants and occurs in a well"@en)
+AnnotationAssertion(rdfs:label o3po:WellFlowRate "vazão líquida do poço"@pt-br)
+AnnotationAssertion(rdfs:label o3po:WellFlowRate "well liquid rate"@en)
+AnnotationAssertion(rdfs:seeAlso o3po:WellFlowRate "https://www.glossary.oilfield.slb.com/Terms/w/well_flow_rate.aspx"@en)
+SubClassOf(o3po:WellFlowRate o3po:FlowRate)
+
+# Class: o3po:WellLiquidRateInSituConditions (vazão de líquido do poço em condições de reservatório)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:WellLiquidRateInSituConditions "def. a well flow rate measured at in-situ (reservoir) conditions"@en)
+AnnotationAssertion(rdfs:label o3po:WellLiquidRateInSituConditions "vazão de líquido do poço em condições de reservatório"@pt-br)
+AnnotationAssertion(rdfs:label o3po:WellLiquidRateInSituConditions "well liquid rate in-situ conditions"@en)
+SubClassOf(o3po:WellLiquidRateInSituConditions o3po:WellFlowRate)
+DisjointClasses(o3po:WellLiquidRateInSituConditions o3po:WellLiquidRateStandardConditions)
+
+# Class: o3po:WellLiquidRateStandardConditions (vazão de líquido do poço em condições padrão)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:WellLiquidRateStandardConditions "def. a well flow rate measured at standard conditions"@en)
+AnnotationAssertion(rdfs:label o3po:WellLiquidRateStandardConditions "vazão de líquido do poço em condições padrão"@pt-br)
+AnnotationAssertion(rdfs:label o3po:WellLiquidRateStandardConditions "well liquid rate standard conditions"@en)
+SubClassOf(o3po:WellLiquidRateStandardConditions o3po:WellFlowRate)
+
+# Class: o3po:WellName (well name)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:WellName "def. a name that specifically denominates a well"@en)
+AnnotationAssertion(rdfs:label o3po:WellName "nome do poço"@pt-br)
+AnnotationAssertion(rdfs:label o3po:WellName "well name"@en)
+SubClassOf(o3po:WellName o3po:Name)
+SubClassOf(o3po:WellName ObjectSomeValuesFrom(obo:BFO_0000197 o3po:Well))
+
+# Class: o3po:WellStatusFlag (flag de status do poço)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:WellStatusFlag "def. a quality that represents the operational status of a well as a boolean value"@en)
+AnnotationAssertion(rdfs:label o3po:WellStatusFlag "flag de status do poço"@pt-br)
+AnnotationAssertion(rdfs:label o3po:WellStatusFlag "well status flag"@en)
+SubClassOf(o3po:WellStatusFlag obo:BFO_0000019)
+SubClassOf(o3po:WellStatusFlag ObjectSomeValuesFrom(iof-core:qualityOf o3po:Well))
+SubClassOf(o3po:WellStatusFlag ObjectAllValuesFrom(obo:RO_0000080 o3po:Well))
+
+# Class: o3po:Wellhead (wellhead)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:Wellhead "def. an assembly that is located at the top of the casing strings of a well and that provide pressure control of a well, and the means for hanging and isolating the various tubular strings"@en)
+AnnotationAssertion(rdfs:comment o3po:Wellhead "An equipment (or assembly) located to the top of the casing strings of a well that provide pressure control of a well, and the means for hanging and isolating the various tubular strings."@en)
+AnnotationAssertion(rdfs:label o3po:Wellhead "cabeça do poço"@pt-br)
+AnnotationAssertion(rdfs:label o3po:Wellhead "wellhead"@en)
+SubClassOf(o3po:Wellhead iof-core:Assembly)
+SubClassOf(o3po:Wellhead ObjectSomeValuesFrom(o3po:componentOf o3po:Well))
+
+# Class: o3po:WellheadPressure (wellhead pressure)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:WellheadPressure "def. a pressure measured at the wellhead"@en)
+AnnotationAssertion(rdfs:label o3po:WellheadPressure "pressão na cabeça do poço"@pt-br)
+AnnotationAssertion(rdfs:label o3po:WellheadPressure "wellhead pressure"@en)
+SubClassOf(o3po:WellheadPressure o3po:Pressure)
+SubClassOf(o3po:WellheadPressure ObjectSomeValuesFrom(iof-core:qualityOf o3po:Wellhead))
+
+# Class: o3po:WellheadTemperature (wellhead temperature)
+
+AnnotationAssertion(CommonCoreOntologies:definition o3po:WellheadTemperature "def. a temperature measured at the wellhead"@en)
+AnnotationAssertion(rdfs:label o3po:WellheadTemperature "temperatura na cabeça do poço"@pt-br)
+AnnotationAssertion(rdfs:label o3po:WellheadTemperature "wellhead temperature"@en)
+SubClassOf(o3po:WellheadTemperature o3po:Temperature)
+SubClassOf(o3po:WellheadTemperature ObjectSomeValuesFrom(iof-core:qualityOf o3po:Wellhead))
+
+
+DisjointClasses(o3po:BottomholePressure o3po:CommonCloseControlLinePressure o3po:ICVAnnularPressure o3po:ICVDeltaPressure o3po:ICVOpenControlLinePressure o3po:PressureDownstreamOfChoke o3po:PressureUpstreamOfChoke o3po:TubingDownholePressure o3po:WellheadPressure)
+DisjointClasses(o3po:Choke o3po:GasLiftValve o3po:ICV)
+DisjointClasses(o3po:ChristmasTree o3po:Sensor o3po:Separator o3po:Tube o3po:Valve)
+DisjointClasses(o3po:ICVAnnularTemperature o3po:TemperatureDownstreamOfChoke o3po:TemperatureUpstreamOfChoke o3po:TubingDownholeTemperature o3po:WellheadTemperature)
+DisjointClasses(o3po:ICVFlowRateICVMethod o3po:ICVFlowRateIPRMethod o3po:ICVFlowRateReconciledMethod)
+DisjointClasses(o3po:InjectionWell o3po:ObservationWell o3po:ProductionWell)
+
+############################
 #   Annotation Properties
 ############################
 
+# Annotation Property: dcterms:description (description)
+
 AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
 AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
 ############################
@@ -41,6 +1230,4 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 # Class: <https://www.inf.ufrgs.br/ontologies/O3PO_0000000> (root node)
 
 AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/ontologies/O3PO_0000000> "root node"@en)
-
-
 )

@@ -31,9 +31,8 @@ git_main_branch: master
 import_group:
   products:
     - id: bfo
-      mirror_from: http://purl.obolibrary.org/obo/bfo/2020/bfo.owl
     - id: iao
-      mirror_from: http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl
+    - id: ro
     - id: iof-core
       mirror_from: https://spec.industrialontologies.org/ontology/202401/core/Core/
     - id: geocore

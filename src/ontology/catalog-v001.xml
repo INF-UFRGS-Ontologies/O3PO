@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
   <group id="odk-managed-catalog" prefer="public">
-    <uri name="https://www.inf.ufrgs.br/ontologies/o3po/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
-    <uri name="https://www.inf.ufrgs.br/ontologies/o3po/imports/iao_import.owl" uri="imports/iao_import.owl"/>
-    <uri name="https://www.inf.ufrgs.br/ontologies/o3po/imports/iof-core_import.owl" uri="imports/iof-core_import.owl"/>
-    <uri name="https://www.inf.ufrgs.br/ontologies/o3po/imports/geocore_import.owl" uri="imports/geocore_import.owl"/>
+    <uri name="https://www.inf.ufrgs.br/ontologies/o3po/imports/bfo_import.owl" uri="imports/bfo_import.owl" />
+    <uri name="https://www.inf.ufrgs.br/ontologies/o3po/imports/iao_import.owl" uri="imports/iao_import.owl" />
+    <uri name="https://www.inf.ufrgs.br/ontologies/o3po/imports/ro_import.owl" uri="imports/ro_import.owl" />
+    <uri name="https://www.inf.ufrgs.br/ontologies/o3po/imports/iof-core_import.owl" uri="imports/iof-core_import.owl" />
+    <uri name="https://www.inf.ufrgs.br/ontologies/o3po/imports/geocore_import.owl" uri="imports/geocore_import.owl" />
   </group>
 </catalog>

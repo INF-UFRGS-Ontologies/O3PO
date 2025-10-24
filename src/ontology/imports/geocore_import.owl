@@ -7,14 +7,224 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://www.inf.ufrgs.br/ontologies/o3po/imports/geocore_import.owl>
-<https://www.inf.ufrgs.br/ontologies/o3po/releases/2025-10-22/imports/geocore_import.owl>
+<https://www.inf.ufrgs.br/ontologies/o3po/releases/2025-10-24/imports/geocore_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <https://www.inf.ufrgs.br/bdi/ontologies/geocore/releases/2024-04-06/geocore.owl>)
-Annotation(owl:versionInfo "2025-10-22")
+Annotation(owl:versionInfo "2025-10-24")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000145>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000146>))
+Declaration(Class(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003>))
+Declaration(Class(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006>))
+Declaration(Class(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007>))
+Declaration(Class(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008>))
+Declaration(Class(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009>))
+Declaration(Class(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000010>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000194>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000195>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000196>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000197>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000015>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000016>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 
+############################
+#   Object Properties
+############################
 
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000194> (specifically depended on by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000194> "specifically depended on by"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000194> <http://purl.obolibrary.org/obo/BFO_0000195>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000194> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000020> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>))))
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000194> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000195> (specifically depends on)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000195> "specifically depends on"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000195> <http://purl.obolibrary.org/obo/BFO_0000020>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000195> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000020> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>))))
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000196> (bearer of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000196> "bearer of"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000196> <http://purl.obolibrary.org/obo/BFO_0000194>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000196> <http://purl.obolibrary.org/obo/BFO_0000197>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000196> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>)))
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000196> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000197> (inheres in)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000197> "inheres in"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000197> <http://purl.obolibrary.org/obo/BFO_0000195>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000197> <http://purl.obolibrary.org/obo/BFO_0000020>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000197> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>)))
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000015> (has age)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000015> "The relation between a Geological Object and its Geological Age."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000015> "has age"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000015> <http://purl.obolibrary.org/obo/BFO_0000196>)
+InverseObjectProperties(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000015> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000016>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000016> (age of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000016> "The relation between a Geological Age and a Geological Object. Inverse of has age relation."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000016> "age of"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000016> <http://purl.obolibrary.org/obo/BFO_0000197>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000001> "entity"@en)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000002> (continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000002> "continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000001>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000003> (occurrent)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000003> "occurrent"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000003> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000004> (independent continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000004> "independent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000006> (spatial region)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000006> "spatial region"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000015> (process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000015> "process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000019> (quality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000019> "quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000019> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000020> (specifically dependent continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000020> "specifically dependent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000029> (site)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000029> "site"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000030> (object)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000030> "object"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000030> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000031> (generically dependent continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000031> "generically dependent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000140> (continuant fiat boundary)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000140> "continuant fiat boundary"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000140> <http://purl.obolibrary.org/obo/BFO_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000141> (immaterial entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000141> "immaterial entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000141> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000145> (relational quality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000145> "relational quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000145> <http://purl.obolibrary.org/obo/BFO_0000019>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000146> (fiat surface)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000146> "fiat surface"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000146> <http://purl.obolibrary.org/obo/BFO_0000140>)
+
+# Class: <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003> (geological age)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003> "It is a quality that 'inheres in' a 'geological object' or 'earth material' that corresponds to the 'geological time interval' in which the 'geological process' that it was 'generated by' occupied."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003> "geological age"@en)
+SubClassOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003> <http://purl.obolibrary.org/obo/BFO_0000019>)
+
+# Class: <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006> (earth material)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006> "Examples are an amount of sandstone, an amount of petroleum, an amount of
+natural gas."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006> "It is a natural amount of matter 'generated by' some 'geological process'."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006> "earth material"@en)
+SubClassOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006> <http://purl.obolibrary.org/obo/BFO_0000040>)
+SubClassOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006> ObjectSomeValuesFrom(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000015> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000003>))
+
+# Class: <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007> (amount of mineral)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007> "The amount of quarts that constitutes some grain, the amount of feldspar that is part of an amount of rock."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007> "An amount of rock is an 'earth material' that is a naturally occuring, inorganic, solid, homogeneous chemical compound with a crystalline structure."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007> "amount of mineral"@en)
+SubClassOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006>)
+
+# Class: <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008> (amount of rock)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008> "The amount of sandstone that constitutes a lithostratigraphic unit."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008> "An amount of rock is a solid consolidated 'earth material' that is 'constituted by' an aggregate of particles made of mineral matter or material of biological origin."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008> "amount of rock"@en)
+SubClassOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006>)
+DisjointClasses(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009>)
+
+# Class: <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009> (earth fluid)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009> "Earth fluid is an 'earth material' that is fluild."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009> "earth fluid"@en)
+SubClassOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006>)
+
+# Class: <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000010> (unconsolidated earth material)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000010> "Unconsolidated earth material is an 'earth material' that is consituted by an aggregate of solid particles but is not consolidated into a 'rock' it self."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000010> "unconsolidated earth material"@en)
+SubClassOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000010> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000006>)
+
+
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000140>)
+DisjointClasses(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009>)
+DisjointClasses(<https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000007> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000008> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000009> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000010>)
 )
