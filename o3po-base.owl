@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.inf.ufrgs.br/ontologies/o3po/o3po-base.owl#"
+     xml:base="https://www.inf.ufrgs.br/ontologies/o3po/o3po-base.owl"
+     xmlns:dce="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:o3po="https://www.inf.ufrgs.br/ontologies/o3po.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:geocore="https://www.inf.ufrgs.br/bdi/ontologies/geocore"
+     xmlns:iof-core="https://spec.industrialontologies.org/ontology/core/Core/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
+    <owl:Ontology rdf:about="https://www.inf.ufrgs.br/ontologies/o3po/o3po-base.owl">
+        <owl:versionIRI rdf:resource="https://www.inf.ufrgs.br/ontologies/o3po/releases/2025-11-04/o3po-base.owl"/>
+        <dce:contributor xml:lang="en">Cauã Antunes</dce:contributor>
+        <dce:contributor xml:lang="en">Fabrício H. Rodrigues</dce:contributor>
+        <dce:contributor xml:lang="en">Haroldo Rojas</dce:contributor>
+        <dce:contributor xml:lang="en">Mara Abel</dce:contributor>
+        <dce:creator xml:lang="en">Nicolau Santos</dce:creator>
+        <dce:description xml:lang="en">A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies.</dce:description>
+        <dce:description xml:lang="pt-br">Uma ontologia de domínio para plantas de produção de petróleo offshore foi estabelecida utilizando BFO como a ontologia de topo e incorporando IOF-Core e GeoCore como ontologias de nível intermediário.</dce:description>
+        <dce:license xml:lang="en">MIT License
+
+Copyright (c) 2025 Nicolau Oyhenard dos Santos
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</dce:license>
+        <dce:title xml:lang="en">Offshore Petroleum Production Plant Ontology (O3PO)</dce:title>
+        <dce:title xml:lang="pt-br">Ontologia de Planta de Produção de Petróleo Offshore (O3PO)</dce:title>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <dcterms:abstract xml:lang="en">A comprehensive domain ontology for modeling offshore petroleum production plants, their components, processes, and operational relationships.</dcterms:abstract>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-01-15</dcterms:created>
+        <dcterms:description>A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies.</dcterms:description>
+        <dcterms:license rdf:resource="https://opensource.org/license/mit"/>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-15</dcterms:modified>
+        <dcterms:publisher xml:lang="en">Federal University of Rio Grande do Sul (UFRGS) - Institute of Informatics</dcterms:publisher>
+        <dcterms:title>Offshore Petroleum Production Plant Ontology (O3PO)</dcterms:title>
+        <rdfs:comment xml:lang="en">O3PO provides a comprehensive formal representation of offshore petroleum production systems based on BFO. The ontology follows aristotelian definition patterns as recommended in Barry Smith&apos;s &apos;Building Ontologies with Basic Formal Ontology&apos;.</rdfs:comment>
+        <owl:backwardCompatibleWith rdf:resource="https://www.petwin.org/O3PO/o3po/"/>
+        <owl:versionInfo>2025-11-04</owl:versionInfo>
+        <o3po:O3PO_870d4a70_205e_4ffe_bbb2_6d5055d8869d></o3po:O3PO_870d4a70_205e_4ffe_bbb2_6d5055d8869d>
+        <o3po:nextavailableid rdf:datatype="http://www.w3.org/2001/XMLSchema#int">00000116</o3po:nextavailableid>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_870d4a70_205e_4ffe_bbb2_6d5055d8869d -->
+
+    <owl:AnnotationProperty rdf:about="https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_870d4a70_205e_4ffe_bbb2_6d5055d8869d"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/ontologies/o3po.owl#nextavailableid -->
+
+    <owl:AnnotationProperty rdf:about="https://www.inf.ufrgs.br/ontologies/o3po.owl#nextavailableid"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://www.inf.ufrgs.br/ontologies/O3PO_0000000">
+        <rdfs:label xml:lang="en">root node</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

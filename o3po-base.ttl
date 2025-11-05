@@ -1,0 +1,129 @@
+@prefix : <https://www.inf.ufrgs.br/ontologies/o3po/o3po-base.ttl#> .
+@prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix o3po: <https://www.inf.ufrgs.br/ontologies/o3po.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geocore: <https://www.inf.ufrgs.br/bdi/ontologies/geocore> .
+@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix AnnotationVocabulary: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/> .
+@prefix CommonCoreOntologies: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@base <https://www.inf.ufrgs.br/ontologies/o3po/o3po-base.ttl> .
+
+<https://www.inf.ufrgs.br/ontologies/o3po/o3po-base.ttl> rdf:type owl:Ontology ;
+                                                          owl:versionIRI <https://www.inf.ufrgs.br/ontologies/o3po/releases/2025-11-04/o3po-base.ttl> ;
+                                                          dce:contributor "Cauã Antunes"@en ,
+                                                                          "Fabrício H. Rodrigues"@en ,
+                                                                          "Haroldo Rojas"@en ,
+                                                                          "Mara Abel"@en ;
+                                                          dce:creator "Nicolau Santos"@en ;
+                                                          dce:description "A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies."@en ,
+                                                                          "Uma ontologia de domínio para plantas de produção de petróleo offshore foi estabelecida utilizando BFO como a ontologia de topo e incorporando IOF-Core e GeoCore como ontologias de nível intermediário."@pt-br ;
+                                                          dce:license """MIT License
+
+Copyright (c) 2025 Nicolau Oyhenard dos Santos
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."""@en ;
+                                                          dce:title "Offshore Petroleum Production Plant Ontology (O3PO)"@en ,
+                                                                    "Ontologia de Planta de Produção de Petróleo Offshore (O3PO)"@pt-br ;
+                                                          dce:type obo:IAO_8000001 ;
+                                                          dcterms:abstract "A comprehensive domain ontology for modeling offshore petroleum production plants, their components, processes, and operational relationships."@en ;
+                                                          dcterms:created "2023-01-15"^^xsd:date ;
+                                                          dcterms:description "A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies." ;
+                                                          dcterms:license <https://opensource.org/license/mit> ;
+                                                          dcterms:modified "2025-01-15"^^xsd:date ;
+                                                          dcterms:publisher "Federal University of Rio Grande do Sul (UFRGS) - Institute of Informatics"@en ;
+                                                          dcterms:title "Offshore Petroleum Production Plant Ontology (O3PO)" ;
+                                                          rdfs:comment "O3PO provides a comprehensive formal representation of offshore petroleum production systems based on BFO. The ontology follows aristotelian definition patterns as recommended in Barry Smith's 'Building Ontologies with Basic Formal Ontology'."@en ;
+                                                          owl:backwardCompatibleWith <https://www.petwin.org/O3PO/o3po/> ;
+                                                          owl:versionInfo "2025-11-04" ;
+                                                          o3po:O3PO_870d4a70_205e_4ffe_bbb2_6d5055d8869d "" ;
+                                                          o3po:nextavailableid "00000116"^^xsd:int .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+dce:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dce:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dce:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+dce:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dce:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/type
+dce:type rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+dcterms:abstract rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_870d4a70_205e_4ffe_bbb2_6d5055d8869d
+o3po:O3PO_870d4a70_205e_4ffe_bbb2_6d5055d8869d rdf:type owl:AnnotationProperty .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po.owl#nextavailableid
+o3po:nextavailableid rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://www.inf.ufrgs.br/ontologies/O3PO_0000000> rdfs:label "root node"@en .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

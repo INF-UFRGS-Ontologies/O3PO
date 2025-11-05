@@ -7,20 +7,136 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://www.inf.ufrgs.br/ontologies/o3po/imports/iof-core_import.owl>
-<https://www.inf.ufrgs.br/ontologies/o3po/releases/2025-10-22/imports/iof-core_import.owl>
+<https://www.inf.ufrgs.br/ontologies/o3po/releases/2025-11-04/imports/iof-core_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <https://spec.industrialontologies.org/ontology/202401/core/Core/>)
-Annotation(owl:versionInfo "2025-10-22")
+Annotation(owl:versionInfo "2025-11-04")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000145>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000146>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/ActionSpecification>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/Agent>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/AgentRole>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/Assembly>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/Capability>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/DescriptiveInformationContentEntity>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/DesignSpecification>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/DesignativeInformationContentEntity>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/DesignedFunction>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/DirectiveInformationContentEntity>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/GroupOfAgents>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/GroupOfPersons>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/Identifier>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/MaterialComponent>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/MaterialComponentRole>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/MeasurementCapability>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/ObjectiveSpecification>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/Organization>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/OrganizationIdentifier>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/OrganizedGroupOfAgents>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/Person>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/PhysicalLocationIdentifier>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/System>))
+Declaration(Class(<https://spec.industrialontologies.org/ontology/core/Core/ValueExpression>))
 Declaration(Class(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000056>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000057>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000110>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000111>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000115>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000129>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000137>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000172>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000174>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000175>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000176>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000177>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000178>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000194>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000195>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000196>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000197>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/actsOnBehalfOfAtSomeTime>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/capabilityOf>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/denotedBy>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/denotes>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/describedBy>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/describes>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/designatedBy>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/designates>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/hasCapability>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/hasMeasuredValueAtSomeTime>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/hasOutput>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/hasProcessCharacteristic>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/hasQuality>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/hasRole>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/hasValueExpressionAtSomeTime>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/isAbout>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/isMeasuredValueOfAtSomeTime>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/isOutputOf>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/isSubjectOf>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/isValueExpressionOfAtSomeTime>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/measuredByAtSomeTime>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/measuresAtSomeTime>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/prescribedBy>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/prescribes>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/processCharacteristicOf>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/qualityOf>))
+Declaration(ObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/roleOf>))
 Declaration(NamedIndividual(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional>))
 Declaration(NamedIndividual(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/abstract>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/modified>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/publisher>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom>))
 ############################
 #   Annotation Properties
 ############################
+
+# Annotation Property: <http://purl.org/dc/terms/abstract> (abstract)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/abstract> "abstract"@en-us)
 
 # Annotation Property: <http://purl.org/dc/terms/description> (description)
 
@@ -30,15 +146,765 @@ AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/description> "descripti
 
 AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/license> "license"@en-us)
 
+# Annotation Property: <http://purl.org/dc/terms/modified> (modified)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/modified> "modified"@en-us)
+
+# Annotation Property: <http://purl.org/dc/terms/publisher> (publisher)
+
+AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/publisher> "publisher"@en-us)
+
 # Annotation Property: <http://purl.org/dc/terms/title> (title)
 
 AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/title> "title"@en-us)
+
+# Annotation Property: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> (adapted from)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "adapted from"@en-us)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000056> (participates in)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000056> "participates in"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000056> <http://purl.obolibrary.org/obo/BFO_0000057>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000056> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>))))
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000056> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000057> (has participant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000057> "has participant"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000057> <http://purl.obolibrary.org/obo/BFO_0000015>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000057> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>))))
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000110> (has continuant part at all times)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000110> "has continuant part at all times"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000110> <http://purl.obolibrary.org/obo/BFO_0000178>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000110> <http://purl.obolibrary.org/obo/BFO_0000002>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000110> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000111> (has proper continuant part at all times)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000111> "has proper continuant part at all times"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000111> <http://purl.obolibrary.org/obo/BFO_0000110>)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000111> <http://purl.obolibrary.org/obo/BFO_0000174>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000111> <http://purl.obolibrary.org/obo/BFO_0000002>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000111> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000115> (has member part)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000115> "has member part"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000115> <http://purl.obolibrary.org/obo/BFO_0000178>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000115> <http://purl.obolibrary.org/obo/BFO_0000129>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000115> <http://purl.obolibrary.org/obo/BFO_0000040>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000115> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000129> (member part of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000129> "member part of"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000129> <http://purl.obolibrary.org/obo/BFO_0000176>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000129> <http://purl.obolibrary.org/obo/BFO_0000040>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000129> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000137> (proper continuant part of at all times)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000137> "proper continuant part of at all times"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000137> <http://purl.obolibrary.org/obo/BFO_0000175>)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000137> <http://purl.obolibrary.org/obo/BFO_0000177>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000137>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000137> <http://purl.obolibrary.org/obo/BFO_0000002>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000137> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000172> (has member part at all times)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000172> "has member part at all times"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000172> <http://purl.obolibrary.org/obo/BFO_0000110>)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000172> <http://purl.obolibrary.org/obo/BFO_0000115>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000172> <http://purl.obolibrary.org/obo/BFO_0000040>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000172> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000174> (has proper continuant part at some time)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000174> "has proper continuant part at some time"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000174> <http://purl.obolibrary.org/obo/BFO_0000178>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000174> <http://purl.obolibrary.org/obo/BFO_0000175>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000174> <http://purl.obolibrary.org/obo/BFO_0000002>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000174> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000175> (proper continuant part of at some time)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000175> "proper continuant part of at some time"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000175> <http://purl.obolibrary.org/obo/BFO_0000176>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000175> <http://purl.obolibrary.org/obo/BFO_0000002>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000175> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000176> (continuant part of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000176> "continuant part of"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000176> <http://purl.obolibrary.org/obo/BFO_0000178>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000176> <http://purl.obolibrary.org/obo/BFO_0000002>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000176> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000177> (continuant part of at all times)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000177> "continuant part of at all times"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000177> <http://purl.obolibrary.org/obo/BFO_0000176>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000177>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000177> <http://purl.obolibrary.org/obo/BFO_0000002>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000177> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000178> (has continuant part)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000178> "has continuant part"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000178> <http://purl.obolibrary.org/obo/BFO_0000002>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000178> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000194> (specifically depended on by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000194> "specifically depended on by"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000194> <http://purl.obolibrary.org/obo/BFO_0000195>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000194> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000020> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>))))
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000194> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000195> (specifically depends on)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000195> "specifically depends on"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000195> <http://purl.obolibrary.org/obo/BFO_0000020>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000195> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000020> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>))))
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000196> (bearer of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000196> "bearer of"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000196> <http://purl.obolibrary.org/obo/BFO_0000194>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/BFO_0000196> <http://purl.obolibrary.org/obo/BFO_0000197>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000196> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>)))
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000196> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000197> (inheres in)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000197> "inheres in"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000197> <http://purl.obolibrary.org/obo/BFO_0000195>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000197> <http://purl.obolibrary.org/obo/BFO_0000020>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000197> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>)))
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/actsOnBehalfOfAtSomeTime> (acts on behalf of at some time)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/actsOnBehalfOfAtSomeTime> "acts on behalf of at some time"@en-us)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/actsOnBehalfOfAtSomeTime> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000024>)))
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/actsOnBehalfOfAtSomeTime> ObjectUnionOf(<https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem> <https://spec.industrialontologies.org/ontology/core/Core/GroupOfAgents> <https://spec.industrialontologies.org/ontology/core/Core/Person>))
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/capabilityOf> (capability of)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/capabilityOf> "capability of"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/capabilityOf> <http://purl.obolibrary.org/obo/BFO_0000197>)
+InverseObjectProperties(<https://spec.industrialontologies.org/ontology/core/Core/capabilityOf> <https://spec.industrialontologies.org/ontology/core/Core/hasCapability>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/capabilityOf> <https://spec.industrialontologies.org/ontology/core/Core/Capability>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/capabilityOf> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes> (component part of at all times)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes> "component part of at all times"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes> <http://purl.obolibrary.org/obo/BFO_0000137>)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes> <https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime>)
+TransitiveObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000024>)))
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000024>)))
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime> (component part of at some time)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime> "component part of at some time"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime> <http://purl.obolibrary.org/obo/BFO_0000175>)
+InverseObjectProperties(<https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime> <https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000024>)))
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000024>)))
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/denotedBy> (denoted by)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/denotedBy> "denoted by"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/denotedBy> <https://spec.industrialontologies.org/ontology/core/Core/isSubjectOf>)
+InverseObjectProperties(<https://spec.industrialontologies.org/ontology/core/Core/denotedBy> <https://spec.industrialontologies.org/ontology/core/Core/denotes>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/denotedBy> <http://purl.obolibrary.org/obo/BFO_0000001>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/denotedBy> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/denotes> (denotes)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/denotes> "denotes"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/denotes> <https://spec.industrialontologies.org/ontology/core/Core/isAbout>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/denotes> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/denotes> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/describedBy> (described by)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/describedBy> "described by"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/describedBy> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/describedBy> <https://spec.industrialontologies.org/ontology/core/Core/isSubjectOf>)
+InverseObjectProperties(<https://spec.industrialontologies.org/ontology/core/Core/describedBy> <https://spec.industrialontologies.org/ontology/core/Core/describes>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/describedBy> <http://purl.obolibrary.org/obo/BFO_0000001>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/describedBy> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/describes> (describes)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/describes> "describes"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/describes> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/describes> <https://spec.industrialontologies.org/ontology/core/Core/isAbout>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/describes> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/describes> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/designatedBy> (designated by)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/designatedBy> "designated by"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/designatedBy> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/designatedBy> <https://spec.industrialontologies.org/ontology/core/Core/denotedBy>)
+InverseObjectProperties(<https://spec.industrialontologies.org/ontology/core/Core/designatedBy> <https://spec.industrialontologies.org/ontology/core/Core/designates>)
+InverseFunctionalObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/designatedBy>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/designatedBy> <http://purl.obolibrary.org/obo/BFO_0000001>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/designatedBy> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/designates> (designates)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/designates> "designates"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/designates> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/designates> <https://spec.industrialontologies.org/ontology/core/Core/denotes>)
+FunctionalObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/designates>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/designates> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/designates> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/hasCapability> (has capability)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/hasCapability> "has capability"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/hasCapability> <http://purl.obolibrary.org/obo/BFO_0000196>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/hasCapability> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/hasCapability> <https://spec.industrialontologies.org/ontology/core/Core/Capability>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes> (has component part at all times)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes> "has component part at all times"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes> <http://purl.obolibrary.org/obo/BFO_0000111>)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes> <https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime>)
+TransitiveObjectProperty(<https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000024>)))
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtAllTimes> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000024>)))
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime> (has component part at some time)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime> "has component part at some time"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime> <http://purl.obolibrary.org/obo/BFO_0000174>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000024>)))
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000024>)))
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/hasMeasuredValueAtSomeTime> (has measured value at some time)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/hasMeasuredValueAtSomeTime> "has measured value at some time"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/hasMeasuredValueAtSomeTime> <https://spec.industrialontologies.org/ontology/core/Core/hasValueExpressionAtSomeTime>)
+InverseObjectProperties(<https://spec.industrialontologies.org/ontology/core/Core/hasMeasuredValueAtSomeTime> <https://spec.industrialontologies.org/ontology/core/Core/isMeasuredValueOfAtSomeTime>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/hasMeasuredValueAtSomeTime> <http://purl.obolibrary.org/obo/BFO_0000001>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/hasMeasuredValueAtSomeTime> <https://spec.industrialontologies.org/ontology/core/Core/ValueExpression>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/hasOutput> (has output)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/hasOutput> "has output"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/hasOutput> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology"^^xsd:anyURI)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/hasOutput> <http://purl.obolibrary.org/obo/BFO_0000057>)
+InverseObjectProperties(<https://spec.industrialontologies.org/ontology/core/Core/hasOutput> <https://spec.industrialontologies.org/ontology/core/Core/isOutputOf>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/hasOutput> <http://purl.obolibrary.org/obo/BFO_0000015>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/hasOutput> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/hasProcessCharacteristic> (has process characteristic)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/hasProcessCharacteristic> "has process characteristic"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/hasProcessCharacteristic> owl:topObjectProperty)
+InverseObjectProperties(<https://spec.industrialontologies.org/ontology/core/Core/hasProcessCharacteristic> <https://spec.industrialontologies.org/ontology/core/Core/processCharacteristicOf>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/hasProcessCharacteristic> <http://purl.obolibrary.org/obo/BFO_0000015>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/hasProcessCharacteristic> <https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/hasQuality> (has quality)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/hasQuality> "has quality"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/hasQuality> "http://purl.obolibrary.org/obo/RO_0000086")
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/hasQuality> <http://purl.obolibrary.org/obo/BFO_0000196>)
+InverseObjectProperties(<https://spec.industrialontologies.org/ontology/core/Core/hasQuality> <https://spec.industrialontologies.org/ontology/core/Core/qualityOf>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/hasQuality> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/hasQuality> <http://purl.obolibrary.org/obo/BFO_0000019>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/hasRole> (has role)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/hasRole> "has role"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/hasRole> "http://purl.obolibrary.org/obo/RO_0000087")
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/hasRole> <http://purl.obolibrary.org/obo/BFO_0000196>)
+InverseObjectProperties(<https://spec.industrialontologies.org/ontology/core/Core/hasRole> <https://spec.industrialontologies.org/ontology/core/Core/roleOf>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/hasRole> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/hasRole> <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/hasValueExpressionAtSomeTime> (has value expression at some time)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/hasValueExpressionAtSomeTime> "has value expression at some time"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/hasValueExpressionAtSomeTime> <https://spec.industrialontologies.org/ontology/core/Core/describedBy>)
+InverseObjectProperties(<https://spec.industrialontologies.org/ontology/core/Core/hasValueExpressionAtSomeTime> <https://spec.industrialontologies.org/ontology/core/Core/isValueExpressionOfAtSomeTime>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/hasValueExpressionAtSomeTime> <http://purl.obolibrary.org/obo/BFO_0000001>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/hasValueExpressionAtSomeTime> <https://spec.industrialontologies.org/ontology/core/Core/ValueExpression>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/isAbout> (is about)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/isAbout> "is about"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/isAbout> "IAO:http://purl.obolibrary.org/obo/IAO_0000136 and CCO:http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology")
+InverseObjectProperties(<https://spec.industrialontologies.org/ontology/core/Core/isAbout> <https://spec.industrialontologies.org/ontology/core/Core/isSubjectOf>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/isAbout> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/isAbout> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/isMeasuredValueOfAtSomeTime> (is measured value of at some time)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/isMeasuredValueOfAtSomeTime> "is measured value of at some time"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/isMeasuredValueOfAtSomeTime> <https://spec.industrialontologies.org/ontology/core/Core/isValueExpressionOfAtSomeTime>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/isMeasuredValueOfAtSomeTime> <https://spec.industrialontologies.org/ontology/core/Core/ValueExpression>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/isMeasuredValueOfAtSomeTime> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/isOutputOf> (is output of)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/isOutputOf> "is output of"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/isOutputOf> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology"^^xsd:anyURI)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/isOutputOf> <http://purl.obolibrary.org/obo/BFO_0000056>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/isOutputOf> <http://purl.obolibrary.org/obo/BFO_0000002>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/isOutputOf> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/isSubjectOf> (is subject of)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/isSubjectOf> "is subject of"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/isSubjectOf> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/isSubjectOf> <http://purl.obolibrary.org/obo/BFO_0000001>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/isSubjectOf> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/isValueExpressionOfAtSomeTime> (is value expression of at some time)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/isValueExpressionOfAtSomeTime> "is value expression of at some time"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/isValueExpressionOfAtSomeTime> "http://purl.obolibrary.org/obo/OBI_0001938")
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/isValueExpressionOfAtSomeTime> <https://spec.industrialontologies.org/ontology/core/Core/describes>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/isValueExpressionOfAtSomeTime> <https://spec.industrialontologies.org/ontology/core/Core/ValueExpression>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/isValueExpressionOfAtSomeTime> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/measuredByAtSomeTime> (measured by at some time)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/measuredByAtSomeTime> "measured by at some time"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/measuredByAtSomeTime> owl:topObjectProperty)
+InverseObjectProperties(<https://spec.industrialontologies.org/ontology/core/Core/measuredByAtSomeTime> <https://spec.industrialontologies.org/ontology/core/Core/measuresAtSomeTime>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/measuredByAtSomeTime> <http://purl.obolibrary.org/obo/BFO_0000001>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/measuredByAtSomeTime> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/measuresAtSomeTime> (measures at some time)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/measuresAtSomeTime> "measures at some time"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/measuresAtSomeTime> owl:topObjectProperty)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/measuresAtSomeTime> <http://purl.obolibrary.org/obo/BFO_0000040>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/measuresAtSomeTime> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/prescribedBy> (prescribed by)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/prescribedBy> "prescribed by"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/prescribedBy> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/prescribedBy> <https://spec.industrialontologies.org/ontology/core/Core/isSubjectOf>)
+InverseObjectProperties(<https://spec.industrialontologies.org/ontology/core/Core/prescribedBy> <https://spec.industrialontologies.org/ontology/core/Core/prescribes>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/prescribedBy> <http://purl.obolibrary.org/obo/BFO_0000001>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/prescribedBy> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/prescribes> (prescribes)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/prescribes> "prescribes"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/prescribes> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/prescribes> <https://spec.industrialontologies.org/ontology/core/Core/isAbout>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/prescribes> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/prescribes> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/processCharacteristicOf> (process characteristic of)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/processCharacteristicOf> "process characteristic of"@en-us)
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/processCharacteristicOf> owl:topObjectProperty)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/processCharacteristicOf> <https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/processCharacteristicOf> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/qualityOf> (quality of)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/qualityOf> "quality of"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/qualityOf> "http://purl.obolibrary.org/obo/RO_0000080")
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/qualityOf> <http://purl.obolibrary.org/obo/BFO_0000197>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/qualityOf> <http://purl.obolibrary.org/obo/BFO_0000019>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/qualityOf> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://spec.industrialontologies.org/ontology/core/Core/roleOf> (role of)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/roleOf> "role of"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/roleOf> "http://purl.obolibrary.org/obo/RO_0000081")
+SubObjectPropertyOf(<https://spec.industrialontologies.org/ontology/core/Core/roleOf> <http://purl.obolibrary.org/obo/BFO_0000197>)
+ObjectPropertyDomain(<https://spec.industrialontologies.org/ontology/core/Core/roleOf> <http://purl.obolibrary.org/obo/BFO_0000023>)
+ObjectPropertyRange(<https://spec.industrialontologies.org/ontology/core/Core/roleOf> <http://purl.obolibrary.org/obo/BFO_0000004>)
 
 
 
 ############################
 #   Classes
 ############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000001> "entity"@en)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000002> (continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000002> "continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000001>)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000002> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000176> <http://purl.obolibrary.org/obo/BFO_0000002>))
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000003> (occurrent)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000003> "occurrent"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000003> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000004> (independent continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000004> "independent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000176> <http://purl.obolibrary.org/obo/BFO_0000004>))
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000006> (spatial region)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000006> "spatial region"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000141>)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000006> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000176> <http://purl.obolibrary.org/obo/BFO_0000006>))
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000008> (temporal region)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000008> "temporal region"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000011> (spatiotemporal region)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000011> "spatiotemporal region"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000011> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000015> (process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000015> "process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000016> (disposition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000016> "disposition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000016> <http://purl.obolibrary.org/obo/BFO_0000017>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000016> <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000017> (realizable entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000017> "realizable entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000017> <http://purl.obolibrary.org/obo/BFO_0000020>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000017> <http://purl.obolibrary.org/obo/BFO_0000019>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000019> (quality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000019> "quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000019> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000020> (specifically dependent continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000020> "specifically dependent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000023> (role)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000023> "role"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000023> <http://purl.obolibrary.org/obo/BFO_0000017>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000024> (fiat object part)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000024> "fiat object part"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000024> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000027> (object aggregate)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000027> "object aggregate"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000027> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000029> (site)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000029> "site"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000141>)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000029> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000176> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000040>)))
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000029> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000178> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000140>)))
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000030> (object)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000030> "object"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000030> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000031> (generically dependent continuant)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000031> "generically dependent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000034> (function)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000034> "function"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000034> <http://purl.obolibrary.org/obo/BFO_0000016>)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000034> <https://spec.industrialontologies.org/ontology/core/Core/Capability>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000035> (process boundary)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000035> "process boundary"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000035> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000176> <http://purl.obolibrary.org/obo/BFO_0000040>))
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000178> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000140>)))
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000140> (continuant fiat boundary)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000140> "continuant fiat boundary"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000140> <http://purl.obolibrary.org/obo/BFO_0000141>)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000140> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000178> <http://purl.obolibrary.org/obo/BFO_0000140>))
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000141> (immaterial entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000141> "immaterial entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000141> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000145> (relational quality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000145> "relational quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000145> <http://purl.obolibrary.org/obo/BFO_0000019>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000146> (fiat surface)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000146> "fiat surface"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000146> <http://purl.obolibrary.org/obo/BFO_0000140>)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000146> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000178> <http://purl.obolibrary.org/obo/BFO_0000140>))
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/ActionSpecification> (action specification)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/ActionSpecification> "action specification"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/ActionSpecification> "Information Artifact Ontology, http://purl.obolibrary.org/obo/IAO_0000030 and also the Common Core Ontology, http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology (term Action Regulation)")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/ActionSpecification> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/Agent> (agent)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/Agent> "agent"@en-us)
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/Agent> ObjectIntersectionOf(ObjectUnionOf(<https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem> <https://spec.industrialontologies.org/ontology/core/Core/GroupOfAgents> <https://spec.industrialontologies.org/ontology/core/Core/Person>) ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/hasRole> <https://spec.industrialontologies.org/ontology/core/Core/AgentRole>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/Agent> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/AgentRole> (agent role)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/AgentRole> "agent role"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/AgentRole> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/AgentRole> <http://purl.obolibrary.org/obo/BFO_0000023>)
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/AgentRole> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/roleOf> ObjectIntersectionOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000024>)) ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/actsOnBehalfOfAtSomeTime> ObjectUnionOf(<https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem> <https://spec.industrialontologies.org/ontology/core/Core/GroupOfAgents> <https://spec.industrialontologies.org/ontology/core/Core/Person>)))))
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/Assembly> (assembly)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/Assembly> "assembly"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/Assembly> "APICS 14 ed., 2013, term by the same name; DoD Standard Practice, Identification Marking of US Military Property (MIL-STD-130N Nov. 2012) https://dodprocurementtoolbox.com/cms/sites/default/files/resources/2016-03/MIL-Std130N_Ch1_4.pdf, term by the same name")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/Assembly> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact>)
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/Assembly> ObjectSomeValuesFrom(ObjectInverseOf(<https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtAllTimes>) <https://spec.industrialontologies.org/ontology/core/Core/MaterialComponent>))
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/Capability> (capability)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/Capability> "capability"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/Capability> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/Capability> <http://purl.obolibrary.org/obo/BFO_0000016>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/DescriptiveInformationContentEntity> (descriptive information content entity)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/DescriptiveInformationContentEntity> "descriptive information content entity"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/DescriptiveInformationContentEntity> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI)
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/DescriptiveInformationContentEntity> ObjectIntersectionOf(<https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/describes> <http://purl.obolibrary.org/obo/BFO_0000001>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/DescriptiveInformationContentEntity> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/DesignSpecification> (design specification)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/DesignSpecification> "design specification"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/DesignSpecification> "http://en.wikipedia.org/wiki/Design and from http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology, term under the name 'artifact design'")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/DesignSpecification> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/DesignSpecification> ObjectAllValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/prescribes> <http://purl.obolibrary.org/obo/BFO_0000002>))
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/DesignativeInformationContentEntity> (designative information content entity)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/DesignativeInformationContentEntity> "designative information content entity"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/DesignativeInformationContentEntity> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI)
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/DesignativeInformationContentEntity> ObjectIntersectionOf(<https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/designates> <http://purl.obolibrary.org/obo/BFO_0000001>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/DesignativeInformationContentEntity> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/DesignedFunction> (designed function)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/DesignedFunction> "designed function"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/DesignedFunction> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology"@en-us)
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/DesignedFunction> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000034> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/prescribedBy> <https://spec.industrialontologies.org/ontology/core/Core/DesignSpecification>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/DesignedFunction> <http://purl.obolibrary.org/obo/BFO_0000034>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/DirectiveInformationContentEntity> (directive information content entity)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/DirectiveInformationContentEntity> "directive information content entity"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/DirectiveInformationContentEntity> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI)
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/DirectiveInformationContentEntity> ObjectIntersectionOf(<https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/prescribes> <http://purl.obolibrary.org/obo/BFO_0000001>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/DirectiveInformationContentEntity> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem> (engineered system)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem> "engineered system"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem> "www.incose.com, term by the same name")
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem> ObjectIntersectionOf(<https://spec.industrialontologies.org/ontology/core/Core/System> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000196> <https://spec.industrialontologies.org/ontology/core/Core/DesignedFunction>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem> <https://spec.industrialontologies.org/ontology/core/Core/System>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/GroupOfAgents> (group of agents)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/GroupOfAgents> "group of agents"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/GroupOfAgents> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology")
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/GroupOfAgents> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000115> <https://spec.industrialontologies.org/ontology/core/Core/Agent>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000115> <https://spec.industrialontologies.org/ontology/core/Core/Agent>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/GroupOfAgents> <http://purl.obolibrary.org/obo/BFO_0000027>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/GroupOfPersons> (group of persons)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/GroupOfPersons> "group of persons"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/GroupOfPersons> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology"@en-us)
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/GroupOfPersons> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000115> <https://spec.industrialontologies.org/ontology/core/Core/Person>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000115> <https://spec.industrialontologies.org/ontology/core/Core/Person>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/GroupOfPersons> <http://purl.obolibrary.org/obo/BFO_0000027>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/Identifier> (identifier)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/Identifier> "identifier"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/Identifier> "https://www.omg.org/spec/Commons/Identifiers/Identifier")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/Identifier> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/Identifier> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/designates> <http://purl.obolibrary.org/obo/BFO_0000001>))
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity> (information content entity)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity> "information content entity"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity> "Information Artifact Ontology, http://purl.obolibrary.org/obo/IAO_0000030 and also the Common Core Ontology, http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity> <http://purl.obolibrary.org/obo/BFO_0000031>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> (material artifact)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> "material artifact"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology")
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000196> <https://spec.industrialontologies.org/ontology/core/Core/DesignedFunction>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> <http://purl.obolibrary.org/obo/BFO_0000030>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/MaterialComponent> (material component)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/MaterialComponent> "material component"@en-us)
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/MaterialComponent> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/hasRole> <https://spec.industrialontologies.org/ontology/core/Core/MaterialComponentRole>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/MaterialComponent> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/MaterialComponentRole> (material component role)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/MaterialComponentRole> "material component role"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/MaterialComponentRole> "APICS")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/MaterialComponentRole> <http://purl.obolibrary.org/obo/BFO_0000023>)
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/MaterialComponentRole> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/roleOf> <http://purl.obolibrary.org/obo/BFO_0000040>))
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression> (measured value expression)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression> "measured value expression"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression> "International Vocabulary of Metrology Fourth edition,2.11")
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression> ObjectIntersectionOf(<https://spec.industrialontologies.org/ontology/core/Core/ValueExpression> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/isMeasuredValueOfAtSomeTime> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolibrary.org/obo/BFO_0000020> <https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic>))))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression> <https://spec.industrialontologies.org/ontology/core/Core/ValueExpression>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/MeasurementCapability> (measurement capability)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/MeasurementCapability> "measurement capability"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/MeasurementCapability> "http://purl.obolibrary.org/obo/OBI_0000453")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/MeasurementCapability> <https://spec.industrialontologies.org/ontology/core/Core/Capability>)
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/MeasurementCapability> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/capabilityOf> <http://purl.obolibrary.org/obo/BFO_0000040>))
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity> (measurement information content entity)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity> "measurement information content entity"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology and the International Vocabulary of Metrology")
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity> ObjectIntersectionOf(<https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000110> <https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression>) ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/describes> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolibrary.org/obo/BFO_0000020> <https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic>)) ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/isAbout> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000035> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectComplementOf(<http://purl.obolibrary.org/obo/BFO_0000006>)))) ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/isOutputOf> <https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess> (measurement process)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess> "measurement process"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess> "ISO 9000:2015(en), 3.11.5")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess> <https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess>)
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000057> ObjectIntersectionOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000040> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/hasCapability> <https://spec.industrialontologies.org/ontology/core/Core/MeasurementCapability>)) ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/measuresAtSomeTime> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolibrary.org/obo/BFO_0000020> <https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic>)))))
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/ObjectiveSpecification> (objective specification)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/ObjectiveSpecification> "objective specification"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/ObjectiveSpecification> "http://www.obofoundry.org/ontology/iao.html")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/ObjectiveSpecification> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/Organization> (organization)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/Organization> "organization"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/Organization> "https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/Organizations/Organization")
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/Organization> ObjectIntersectionOf(<https://spec.industrialontologies.org/ontology/core/Core/OrganizedGroupOfAgents> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000172> <https://spec.industrialontologies.org/ontology/core/Core/Person>) ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/designatedBy> <https://spec.industrialontologies.org/ontology/core/Core/OrganizationIdentifier>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/Organization> <https://spec.industrialontologies.org/ontology/core/Core/OrganizedGroupOfAgents>)
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/Organization> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000115> ObjectUnionOf(<https://spec.industrialontologies.org/ontology/core/Core/Organization> <https://spec.industrialontologies.org/ontology/core/Core/Person>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/Organization> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000174> <https://spec.industrialontologies.org/ontology/core/Core/Organization>))
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/OrganizationIdentifier> (organization identifier)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/OrganizationIdentifier> "organization identifier"@en-us)
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/OrganizationIdentifier> ObjectIntersectionOf(<https://spec.industrialontologies.org/ontology/core/Core/Identifier> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/designates> <https://spec.industrialontologies.org/ontology/core/Core/Organization>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/OrganizationIdentifier> <https://spec.industrialontologies.org/ontology/core/Core/Identifier>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/OrganizedGroupOfAgents> (organized group of agents)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/OrganizedGroupOfAgents> "organized group of agents"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/OrganizedGroupOfAgents> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology")
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/OrganizedGroupOfAgents> ObjectIntersectionOf(<https://spec.industrialontologies.org/ontology/core/Core/GroupOfAgents> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000196> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000034> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/prescribedBy> <https://spec.industrialontologies.org/ontology/core/Core/DirectiveInformationContentEntity>)))))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/OrganizedGroupOfAgents> <https://spec.industrialontologies.org/ontology/core/Core/GroupOfAgents>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/Person> (person)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/Person> "person"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/Person> "http://purl.obolibrary.org/obo/MF_0000016")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/Person> <http://purl.obolibrary.org/obo/BFO_0000030>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/PhysicalLocationIdentifier> (physical location identifier)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/PhysicalLocationIdentifier> "physical location identifier"@en-us)
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/PhysicalLocationIdentifier> ObjectIntersectionOf(<https://spec.industrialontologies.org/ontology/core/Core/Identifier> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/designates> <http://purl.obolibrary.org/obo/BFO_0000029>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/PhysicalLocationIdentifier> <https://spec.industrialontologies.org/ontology/core/Core/Identifier>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification> (plan specification)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification> "plan specification"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification> "http://purl.obolibrary.org/obo/IAO_0000104")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000110> <https://spec.industrialontologies.org/ontology/core/Core/ActionSpecification>))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000110> <https://spec.industrialontologies.org/ontology/core/Core/ObjectiveSpecification>))
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess> (planned process)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess> "planned process"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess> "http://purl.obolibrary.org/obo/OBI_0000011")
+EquivalentClasses(<https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000015> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/prescribedBy> <https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification>)))
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic> (process characteristic)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic> "process characteristic"@en-us)
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/ProcessCharacteristic> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/System> (system)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/System> "system"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/System> "Merriam-Webster Dictionary for term under the same name.")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/System> <http://purl.obolibrary.org/obo/BFO_0000027>)
+
+# Class: <https://spec.industrialontologies.org/ontology/core/Core/ValueExpression> (value expression)
+
+AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/core/Core/ValueExpression> "value expression"@en-us)
+AnnotationAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> <https://spec.industrialontologies.org/ontology/core/Core/ValueExpression> "http://purl.obolibrary.org/obo/OBI_0001933")
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/ValueExpression> <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+SubClassOf(<https://spec.industrialontologies.org/ontology/core/Core/ValueExpression> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/isValueExpressionOfAtSomeTime> <http://purl.obolibrary.org/obo/BFO_0000001>))
 
 # Class: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel> (maturity level)
 
@@ -60,4 +926,11 @@ AnnotationAssertion(rdfs:label <https://spec.industrialontologies.org/ontology/c
 ClassAssertion(<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released>)
 
 
+SubClassOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000031> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/isAbout> <http://purl.obolibrary.org/obo/BFO_0000001>)) <https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity>)
+SubClassOf(ObjectIntersectionOf(<https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000110> <https://spec.industrialontologies.org/ontology/core/Core/ActionSpecification>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000110> <https://spec.industrialontologies.org/ontology/core/Core/ObjectiveSpecification>) ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/prescribes> <https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess>)) <https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification>)
+SubClassOf(ObjectIntersectionOf(<https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity> ObjectSomeValuesFrom(<https://spec.industrialontologies.org/ontology/core/Core/prescribes> <http://purl.obolibrary.org/obo/BFO_0000015>)) <https://spec.industrialontologies.org/ontology/core/Core/ActionSpecification>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000140>)
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolibrary.org/obo/BFO_0000011> <http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000035>)
+DisjointClasses(<https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem> <https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact> <https://spec.industrialontologies.org/ontology/core/Core/Organization>)
 )

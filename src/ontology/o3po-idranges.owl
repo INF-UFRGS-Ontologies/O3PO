@@ -16,7 +16,7 @@ Ontology: <https://www.inf.ufrgs.br/ontologies/o3po/o3po-idranges.owl>
 
 Annotations: 
     idsfor: "O3PO",
-    idprefix: "https://www.inf.ufrgs.br/ontologies/O3PO_",
+    idprefix: "https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_",
     iddigits: 7
 
 AnnotationProperty: idprefix:
