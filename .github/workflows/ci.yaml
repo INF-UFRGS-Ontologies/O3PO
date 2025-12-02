@@ -1,0 +1,38 @@
+name: Updates Website on New Release
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    name: FIle transfer for the ontologies website
+    runs-on: arc-runner
+
+    # For future ontologies it will only be necessary to change here
+    env:
+      RELEASE_NAME: ${{ github.event.release.name }}
+      ONTOLOGY: o3po
+      REMOTE_BASE_PATH: /ontogies/public_html/
+
+
+    steps:
+      - name: ⬇️ Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 📤 SFTP with INF server
+        uses: Dylan700/sftp-upload-action@latest 
+        with:
+          server: inf.ufgrs.br
+          username: ontokg
+          key: ${{ secrets.FTP }}
+          port: 22
+          
+          uploads: |
+            ./${{env.ONTOLOGY}}.owl => ${{env.REMOTE_BASE_PATH}}
+            ./${{env.ONTOLOGY}}-full.owl => ${{env.REMOTE_BASE_PATH}}${{env.ONTOLOGY}}/
+            ./${{env.ONTOLOGY}}-simple.owl => ${{env.REMOTE_BASE_PATH}}${{env.ONTOLOGY}}/
+            ./${{env.ONTOLOGY}}-base.owl => ${{env.REMOTE_BASE_PATH}}${{env.ONTOLOGY}}/
+            ./ => ${{env.REMOTE_BASE_PATH}}${{env.ONTOLOGY}}/${{env.RELEASE_NAME}}
