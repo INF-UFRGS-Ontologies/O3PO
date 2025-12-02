@@ -1,0 +1,85 @@
+name: Updates Website on New Release
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    name: FIle transfer for the ontologies website
+    runs-on: arc-runner
+
+    env:
+      RELEASE_NAME: ${{ github.event.release.name || 'manual-upload' }}
+      # For future ontologies it will only be necessary to change here
+      ONTOLOGY: o3po
+      REMOTE_BASE_PATH: ../ontologies/public_html/
+
+
+    steps:
+      - name: ⬇️ Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Transfer all files into release
+        uses: Dylan700/sftp-upload-action@latest 
+        with:
+          server: 143.54.11.25
+          username: ontokg
+          password: ${{ secrets.FTP }}
+          port: 22
+          
+          uploads: |
+            ./ => ${{env.REMOTE_BASE_PATH}}${{env.ONTOLOGY}}/releases/${{env.RELEASE_NAME}}/
+          ignore: |
+            .git*
+            src
+            .github/workflows
+            *.md
+            LICENSE
+
+      - name: Transfer main ontology to ontologies folder
+        uses: Dylan700/sftp-upload-action@latest 
+        with:
+          server: 143.54.11.25
+          username: ontokg
+          password: ${{ secrets.FTP }}
+          port: 22
+          
+          uploads: |
+            ./ => ${{env.REMOTE_BASE_PATH}}
+          ignore: |
+            !${{env.ONTOLOGY}}.owl
+            
+      - name: Transfer main ontology to ontologies folder
+        uses: Dylan700/sftp-upload-action@latest 
+        with:
+          server: 143.54.11.25
+          username: ontokg
+          password: ${{ secrets.FTP }}
+          port: 22
+          
+          uploads: |
+            ./ => ${{env.REMOTE_BASE_PATH}}
+          ignore: |
+            !${{env.ONTOLOGY}}.ttl
+            
+      - name: Transfering full
+        uses: Dylan700/sftp-upload-action@latest 
+        with:
+          server: 143.54.11.25
+          username: ontokg
+          password: ${{ secrets.FTP }}
+          port: 22
+          
+          uploads: |
+            ./ => ${{env.REMOTE_BASE_PATH}}${{env.ONTOLOGY}}/
+          ignore: |
+            .git*
+            src
+            *.md
+            LICENSE
+            ${{env.ONTOLOGY}}.ttl
+            ${{env.ONTOLOGY}}.owl
+
