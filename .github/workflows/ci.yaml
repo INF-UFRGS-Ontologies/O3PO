@@ -25,7 +25,7 @@ jobs:
       - name: 📤 SFTP with INF server
         uses: Dylan700/sftp-upload-action@latest 
         with:
-          server: 143.54.11.34
+          server: 143.54.11.25
           username: ontokg
           password: ${{ secrets.FTP }}
           port: 22
