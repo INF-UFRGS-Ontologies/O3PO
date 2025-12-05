@@ -27,7 +27,7 @@ jobs:
         with:
           server: inf.ufgrs.br
           username: ontokg
-          key: ${{ secrets.FTP }}
+          password: ${{ secrets.FTP }}
           port: 22
           
           uploads: |
