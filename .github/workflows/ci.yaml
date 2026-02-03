@@ -12,7 +12,6 @@ jobs:
     runs-on: arc-runner
 
     env:
-      RELEASE_NAME: ${{ github.event.release.name || 'manual-upload' }}
       # For future ontologies it will only be necessary to change here
       ONTOLOGY: o3po
       REMOTE_BASE_PATH: ../ontologies/public_html/
@@ -22,6 +21,22 @@ jobs:
       - name: ⬇️ Checkout Repository
         uses: actions/checkout@v4
 
+      - name: 🛠️ Process Release Name
+        run: |
+          RAW_NAME="${{ github.event.release.name || 'manual' }}"
+          
+          CLEAN_NAME="${RAW_NAME#v}"
+          
+          if [[ "$CLEAN_NAME" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "FINAL_RELEASE_NAME=$CLEAN_NAME" >> $GITHUB_ENV
+            echo "Using release name: $CLEAN_NAME"
+          else
+            # if the release name format isn't the one expected
+            FALLBACK_DATE=$(date +%Y-%m-%d)
+            echo "FINAL_RELEASE_NAME=$FALLBACK_DATE" >> $GITHUB_ENV
+            echo "Format mismatch or manual run. Using date: $FALLBACK_DATE"
+          fi
+          
       - name: Transfer all files into release
         uses: Dylan700/sftp-upload-action@latest 
         with:
@@ -31,7 +46,7 @@ jobs:
           port: 22
           
           uploads: |
-            ./ => ${{env.REMOTE_BASE_PATH}}${{env.ONTOLOGY}}/releases/${{env.RELEASE_NAME}}/
+            ./ => ${{env.REMOTE_BASE_PATH}}${{env.ONTOLOGY}}/releases/${{env.FINAL_RELEASE_NAME}}/
           ignore: |
             .git*
             src
@@ -82,4 +97,3 @@ jobs:
             LICENSE
             ${{env.ONTOLOGY}}.ttl
             ${{env.ONTOLOGY}}.owl
-
