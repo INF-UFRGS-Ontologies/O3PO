@@ -18,7 +18,7 @@
 @base <https://www.inf.ufrgs.br/ontologies/o3po.ttl> .
 
 <https://www.inf.ufrgs.br/ontologies/o3po.ttl> rdf:type owl:Ontology ;
-                                                owl:versionIRI <https://www.inf.ufrgs.br/ontologies/o3po/releases/2025-11-04/o3po.ttl> ;
+                                                owl:versionIRI <https://www.inf.ufrgs.br/ontologies/o3po/releases/2026-02-03/o3po.ttl> ;
                                                 dce:contributor "Cauã Antunes"@en ,
                                                                 "Fabrício H. Rodrigues"@en ,
                                                                 "Haroldo Rojas"@en ,
@@ -39,14 +39,14 @@ THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMP
                                                 dcterms:created "2023-01-15"^^xsd:date ;
                                                 dcterms:description "A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies." ;
                                                 dcterms:license <https://opensource.org/license/mit> ;
-                                                dcterms:modified "2025-01-15"^^xsd:date ;
+                                                dcterms:modified "2026-02-03"^^xsd:date ;
                                                 dcterms:publisher "Federal University of Rio Grande do Sul (UFRGS) - Institute of Informatics"@en ;
                                                 dcterms:title "Offshore Petroleum Production Plant Ontology (O3PO)" ;
                                                 rdfs:comment "O3PO provides a comprehensive formal representation of offshore petroleum production systems based on BFO. The ontology follows aristotelian definition patterns as recommended in Barry Smith's 'Building Ontologies with Basic Formal Ontology'."@en ;
                                                 owl:backwardCompatibleWith <https://www.petwin.org/O3PO/o3po/> ;
-                                                owl:versionInfo "2025-11-04" ;
+                                                owl:versionInfo "2026-02-03" ;
                                                 o3po:O3PO_870d4a70_205e_4ffe_bbb2_6d5055d8869d "" ;
-                                                o3po:nextavailableid "00000116"^^xsd:int .
+                                                o3po:nextavailableid "00000117"^^xsd:int .
 
 #################################################################
 #    Annotation properties
@@ -4011,24 +4011,17 @@ o3po:O3PO_0000067 rdf:type owl:Class ;
 
 ###  https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_0000068
 o3po:O3PO_0000068 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:BFO_0000023 ,
+                  rdfs:subClassOf o3po:O3PO_0000050 ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty iof-core:roleOf ;
-                                    owl:someValuesFrom o3po:O3PO_0000050
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty iof-core:roleOf ;
-                                    owl:allValuesFrom o3po:O3PO_0000050
+                                    owl:onProperty iof-core:hasRole ;
+                                    owl:someValuesFrom o3po:O3PO_0000116
                                   ] ;
                   oboInOwl:source "https://petrowiki.org/Glossary:Riser"@en ;
-                  CommonCoreOntologies:definition "def. a pipeline that vertically carries fluids or fluid-like amounts or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a platform"@en ,
-                                                  "def. a role that has bearer some pipeline"@en ;
+                  CommonCoreOntologies:definition "def. a pipeline that vertically carries fluids or fluid-like amounts or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a platform"@en ;
                   rdfs:comment "Pipe or pipeline that vertically carries materials (e.g., production fluids, drilling mud, drilling cuttings) or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a production and/or drilling platform."@en ,
                                "Pipe through which liquid travels upward."@en ;
-                  rdfs:label "papel de riser"@pt-br ,
-                             "riser"@en ,
-                             "riser"@pt-br ,
-                             "riser role"@en .
+                  rdfs:label "riser"@en ,
+                             "riser"@pt-br .
 
 
 ###  https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_0000069
@@ -4354,6 +4347,22 @@ o3po:O3PO_0000096 rdf:type owl:Class ;
                   CommonCoreOntologies:definition "def. a temperature measured at the wellhead"@en ;
                   rdfs:label "temperatura na cabeça do poço"@pt-br ,
                              "wellhead temperature"@en .
+
+
+###  https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_0000116
+o3po:O3PO_0000116 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000023 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty iof-core:roleOf ;
+                                    owl:someValuesFrom o3po:O3PO_0000050
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty iof-core:roleOf ;
+                                    owl:allValuesFrom o3po:O3PO_0000050
+                                  ] ;
+                  CommonCoreOntologies:definition "def. a role of a pipeline that connects a wellhead or a manifold on the seafloor to a platform and carries fluids vertically"@en ;
+                  rdfs:label "papel de riser"@pt-br ,
+                             "riser role"@en .
 
 
 #################################################################
@@ -4726,13 +4735,6 @@ AnnotationVocabulary:Released rdf:type owl:NamedIndividual ,
 
 
 #################################################################
-#    Annotations
-#################################################################
-
-<https://www.inf.ufrgs.br/ontologies/O3PO_0000000> rdfs:label "root node"@en .
-
-
-#################################################################
 #    General axioms
 #################################################################
 
@@ -4985,15 +4987,15 @@ AnnotationVocabulary:Released rdf:type owl:NamedIndividual ,
 
 [ rdf:type swrl:Imp ;
    swrl:body [ rdf:type swrl:AtomList ;
-               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
-                           swrl:propertyPredicate obo:RO_0002180 ;
-                           swrl:argument1 <urn:swrl:var#w> ;
-                           swrl:argument2 <urn:swrl:var#p>
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate obo:BFO_0000015 ;
+                           swrl:argument1 <urn:swrl:var#w>
                          ] ;
                rdf:rest [ rdf:type swrl:AtomList ;
-                          rdf:first [ rdf:type swrl:ClassAtom ;
-                                      swrl:classPredicate obo:BFO_0000015 ;
-                                      swrl:argument1 <urn:swrl:var#w>
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate obo:RO_0002180 ;
+                                      swrl:argument1 <urn:swrl:var#w> ;
+                                      swrl:argument2 <urn:swrl:var#p>
                                     ] ;
                           rdf:rest [ rdf:type swrl:AtomList ;
                                      rdf:first [ rdf:type swrl:ClassAtom ;

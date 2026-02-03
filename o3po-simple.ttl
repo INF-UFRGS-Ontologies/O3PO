@@ -14,7 +14,7 @@
 @base <https://www.inf.ufrgs.br/ontologies/o3po/o3po-simple.ttl> .
 
 <https://www.inf.ufrgs.br/ontologies/o3po/o3po-simple.ttl> rdf:type owl:Ontology ;
-                                                            owl:versionIRI <https://www.inf.ufrgs.br/ontologies/o3po/releases/2025-11-04/o3po-simple.ttl> ;
+                                                            owl:versionIRI <https://www.inf.ufrgs.br/ontologies/o3po/releases/2026-02-03/o3po-simple.ttl> ;
                                                             dc:contributor "Cauã Antunes"@en ,
                                                                            "Fabrício H. Rodrigues"@en ,
                                                                            "Haroldo Rojas"@en ,
@@ -35,14 +35,14 @@ THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMP
                                                             terms:created "2023-01-15"^^xsd:date ;
                                                             terms:description "A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies." ;
                                                             terms:license <https://opensource.org/license/mit> ;
-                                                            terms:modified "2025-01-15"^^xsd:date ;
+                                                            terms:modified "2026-02-03"^^xsd:date ;
                                                             terms:publisher "Federal University of Rio Grande do Sul (UFRGS) - Institute of Informatics"@en ;
                                                             terms:title "Offshore Petroleum Production Plant Ontology (O3PO)" ;
                                                             rdfs:comment "O3PO provides a comprehensive formal representation of offshore petroleum production systems based on BFO. The ontology follows aristotelian definition patterns as recommended in Barry Smith's 'Building Ontologies with Basic Formal Ontology'."@en ;
                                                             owl:backwardCompatibleWith <https://www.petwin.org/O3PO/o3po/> ;
-                                                            owl:versionInfo "2025-11-04" ;
+                                                            owl:versionInfo "2026-02-03" ;
                                                             o3po:O3PO_870d4a70_205e_4ffe_bbb2_6d5055d8869d "" ;
-                                                            o3po:nextavailableid "00000116"^^xsd:int .
+                                                            o3po:nextavailableid "00000117"^^xsd:int .
 
 #################################################################
 #    Annotation properties

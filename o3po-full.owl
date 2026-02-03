@@ -18,7 +18,7 @@
      xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="https://www.inf.ufrgs.br/ontologies/o3po/o3po-full.owl">
-        <owl:versionIRI rdf:resource="https://www.inf.ufrgs.br/ontologies/o3po/releases/2025-11-04/o3po-full.owl"/>
+        <owl:versionIRI rdf:resource="https://www.inf.ufrgs.br/ontologies/o3po/releases/2026-02-03/o3po-full.owl"/>
         <dce:contributor xml:lang="en">Cauã Antunes</dce:contributor>
         <dce:contributor xml:lang="en">Fabrício H. Rodrigues</dce:contributor>
         <dce:contributor xml:lang="en">Haroldo Rojas</dce:contributor>
@@ -39,14 +39,14 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
         <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-01-15</dcterms:created>
         <dcterms:description>A domain ontology for offshore petroleum production plants has been established utilizing BFO as the top-level ontology and incorporating IOF-Core and GeoCore as middle-level ontologies.</dcterms:description>
         <dcterms:license rdf:resource="https://opensource.org/license/mit"/>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-15</dcterms:modified>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-02-03</dcterms:modified>
         <dcterms:publisher xml:lang="en">Federal University of Rio Grande do Sul (UFRGS) - Institute of Informatics</dcterms:publisher>
         <dcterms:title>Offshore Petroleum Production Plant Ontology (O3PO)</dcterms:title>
         <rdfs:comment xml:lang="en">O3PO provides a comprehensive formal representation of offshore petroleum production systems based on BFO. The ontology follows aristotelian definition patterns as recommended in Barry Smith&apos;s &apos;Building Ontologies with Basic Formal Ontology&apos;.</rdfs:comment>
         <owl:backwardCompatibleWith rdf:resource="https://www.petwin.org/O3PO/o3po/"/>
-        <owl:versionInfo>2025-11-04</owl:versionInfo>
+        <owl:versionInfo>2026-02-03</owl:versionInfo>
         <o3po:O3PO_870d4a70_205e_4ffe_bbb2_6d5055d8869d></o3po:O3PO_870d4a70_205e_4ffe_bbb2_6d5055d8869d>
-        <o3po:nextavailableid rdf:datatype="http://www.w3.org/2001/XMLSchema#int">00000116</o3po:nextavailableid>
+        <o3po:nextavailableid rdf:datatype="http://www.w3.org/2001/XMLSchema#int">00000117</o3po:nextavailableid>
     </owl:Ontology>
     
 
@@ -5529,28 +5529,19 @@ natural gas.</obo:IAO_0000112>
     <!-- https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_0000068 -->
 
     <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_0000068">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_0000050"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_0000050"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/roleOf"/>
-                <owl:allValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_0000050"/>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasRole"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_0000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:source xml:lang="en">https://petrowiki.org/Glossary:Riser</oboInOwl:source>
         <CommonCoreOntologies:definition xml:lang="en">def. a pipeline that vertically carries fluids or fluid-like amounts or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a platform</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:definition xml:lang="en">def. a role that has bearer some pipeline</CommonCoreOntologies:definition>
         <rdfs:comment xml:lang="en">Pipe or pipeline that vertically carries materials (e.g., production fluids, drilling mud, drilling cuttings) or artifacts (e.g., cables, pipes) and that connects a wellhead or a manifold on the seafloor to a production and/or drilling platform.</rdfs:comment>
         <rdfs:comment xml:lang="en">Pipe through which liquid travels upward.</rdfs:comment>
-        <rdfs:label xml:lang="pt-br">papel de riser</rdfs:label>
         <rdfs:label xml:lang="en">riser</rdfs:label>
         <rdfs:label xml:lang="pt-br">riser</rdfs:label>
-        <rdfs:label xml:lang="en">riser role</rdfs:label>
     </owl:Class>
     
 
@@ -5996,6 +5987,29 @@ natural gas.</obo:IAO_0000112>
         <CommonCoreOntologies:definition xml:lang="en">def. a temperature measured at the wellhead</CommonCoreOntologies:definition>
         <rdfs:label xml:lang="pt-br">temperatura na cabeça do poço</rdfs:label>
         <rdfs:label xml:lang="en">wellhead temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_0000116 -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/roleOf"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_0000050"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/roleOf"/>
+                <owl:allValuesFrom rdf:resource="https://www.inf.ufrgs.br/ontologies/o3po.owl#O3PO_0000050"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition xml:lang="en">def. a role of a pipeline that connects a wellhead or a manifold on the seafloor to a platform and carries fluids vertically</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="pt-br">papel de riser</rdfs:label>
+        <rdfs:label xml:lang="en">riser role</rdfs:label>
     </owl:Class>
     
 
@@ -6555,20 +6569,6 @@ natural gas.</obo:IAO_0000112>
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="https://www.inf.ufrgs.br/ontologies/O3PO_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // General axioms
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -6862,10 +6862,9 @@ natural gas.</obo:IAO_0000112>
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#p"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -6873,9 +6872,10 @@ natural gas.</obo:IAO_0000112>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
                                 <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#p"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
