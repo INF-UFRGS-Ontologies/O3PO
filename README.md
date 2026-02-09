@@ -17,7 +17,7 @@ It provides a structured vocabulary for modeling production systems, equipment, 
 ## 🧭 Overview
 
 - **Ontology IRI:** <https://www.inf.ufrgs.br/ontologies/o3po.owl>
-- **Current version IRI:** <https://www.inf.ufrgs.br/ontologies/o3po/releases/2025-11-04/o3po.owl>
+- **Current version IRI:** <https://www.inf.ufrgs.br/ontologies/o3po/releases/2026-02-03/o3po.owl>
 - **License:** [MIT License](LICENSE)
 - **Code repository:** [INF-UFRGS-Ontologies/O3POntology](https://github.com/INF-UFRGS-Ontologies/O3PO)
 - **Primary language tags:** `@en`, `@pt-BR`
